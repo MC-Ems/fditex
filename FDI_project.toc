@@ -1,15 +1,15 @@
 \babel@toc {english}{}
-\contentsline {section}{\numberline {1}Introduction}{1}%
-\contentsline {section}{\numberline {2}Theoretical Background/Literature Review}{1}%
-\contentsline {subsection}{\numberline {2.1}FDI}{1}%
-\contentsline {subsection}{\numberline {2.2}PSM}{1}%
-\contentsline {section}{\numberline {3}Data and Descriptive Analysis}{2}%
-\contentsline {section}{\numberline {4}Empirical Specification}{4}%
-\contentsline {subsection}{\numberline {4.1}Effect of FDI on TFP}{6}%
-\contentsline {subsection}{\numberline {4.2}Robustness of Results}{7}%
-\contentsline {subsection}{\numberline {4.3}Treatment Effects by Technology Intensity}{9}%
-\contentsline {section}{\numberline {5}Analysis by Type of FDI}{11}%
-\contentsline {section}{\numberline {6}Discussion/Conclusion}{11}%
-\contentsline {section}{References}{14}%
-\contentsline {section}{\numberline {A}Appendix}{iii}%
-\contentsline {subsection}{\numberline {A.1}Treatment by Technology Intensity}{iii}%
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}Theoretical Background/Literature Review}{1}
+\contentsline {subsection}{\numberline {2.1}FDI}{1}
+\contentsline {subsection}{\numberline {2.2}PSM}{1}
+\contentsline {section}{\numberline {3}Data and Descriptive Analysis}{2}
+\contentsline {section}{\numberline {4}Empirical Specification}{4}
+\contentsline {subsection}{\numberline {4.1}Effect of FDI on TFP}{6}
+\contentsline {subsection}{\numberline {4.2}Robustness of Results}{7}
+\contentsline {subsection}{\numberline {4.3}Treatment Effects by Technology Intensity}{9}
+\contentsline {section}{\numberline {5}Analysis by Type of FDI}{11}
+\contentsline {section}{\numberline {6}Discussion/Conclusion}{11}
+\contentsline {section}{References}{14}
+\contentsline {section}{\numberline {A}Appendix}{iii}
+\contentsline {subsection}{\numberline {A.1}Treatment by Technology Intensity}{iii}
