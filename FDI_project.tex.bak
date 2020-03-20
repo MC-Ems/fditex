@@ -1,0 +1,138 @@
+% -------------------------------------------------------------
+%		Preamble
+%--------------------------------------------------------------
+%Document Settings
+\documentclass[a4paper,11pt]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage{setspace}
+\onehalfspacing
+
+% Page numbers
+\newcommand{\sectionnumbering}[1]{%
+  \setcounter{section}{0}%
+   \renewcommand{\thesection}{\csname #1\endcsname{section}}}
+
+% Language settings
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+% Maths settings
+\usepackage{amsmath}
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+\usepackage{amssymb}
+\usepackage{siunitx}
+
+% Graphics packages
+\usepackage{graphicx}
+\graphicspath{{Graphics/}}
+\usepackage{adjustbox}
+\usepackage{lscape}
+
+% Bilbiography settings
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\setcitestyle{authoryear,open={(},close={)}}
+
+
+
+% -------------------------------------------------------------
+%		Title Page
+%--------------------------------------------------------------
+\begin{document}
+
+	\begin{titlepage}
+		\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+		
+%% Logo
+	\vfill\vfill
+	\includegraphics[height=1.5cm]{UoN_Logo}\\[1cm] 
+
+
+	\center			
+%% Heading
+	\textsc{\LARGE University of Nottingham}\\[1.5cm] 
+	\textsc{\Large Applied Microeconometrics}\\[0.5cm] 	
+	\textsc{\large Group Project A}\\[0.5cm] 
+	
+%% Title
+	\HRule\\[0.4cm]
+	{\huge\bfseries Title: FDI}\\[0.4cm] 
+	\HRule\\[0.4cm]
+	
+%% Date
+	{\large\ Spring Term 2020} 	
+	\vfill\vfill\vfill 		
+	
+%% Author(s) and Supervisor
+\begin{flushleft}
+			\large
+			\textit{Supervisor}\\
+			Professor Sourafel \textsc{Girma} 
+			\vfill\vfill 
+			\textit{Authors}\\
+			Yonesse \textsc{Paris} (stud. n°)\\
+			Nelly  \textsc{Lehn} (stud. n°)\\
+			Thea  \textsc{Zoellner} (stud. n°)\\
+			Georg  \textsc{Schneider} (stud. n°)\\
+			Emilie \textsc{Bechtold} (20214031)
+		\end{flushleft}
+	\vfill 
+	
+\end{titlepage}
+
+
+% -------------------------------------------------------------
+%		Contents
+%--------------------------------------------------------------
+\pagenumbering{roman}
+\sectionnumbering{Roman}
+\tableofcontents
+
+\newpage
+
+\listoftables
+\newpage
+
+%-------------------------------------------------------------
+% Main Body
+%-------------------------------------------------------------
+\pagenumbering{arabic}
+\sectionnumbering{arabic}
+
+\section{Introduction}
+
+
+
+\section{Theoretical Background/Literature Review}
+
+
+\section{Data and Descriptive Analysis}
+
+\section{Empirical Specification}
+
+\section{Results}
+
+\section{Discussion/Conclusion}
+
+	\begin{itemize}
+	\item First thing that needs to be done
+	\item Second thing that needs to be done
+	\end{itemize}
+
+\newpage
+
+%-------------------------------------------------------------
+% References
+%-------------------------------------------------------------
+%\printbibliography
+
+%-------------------------------------------------------------
+% Appendix
+%-------------------------------------------------------------
+
+\section*{Appendix}
+\pagenumbering{roman}
+\sectionnumbering{Roman}
+\setcounter{page}{3} %%May have to adjust this if we leave out list of tables or add something else
+
+\end{document}
