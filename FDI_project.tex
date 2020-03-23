@@ -56,7 +56,7 @@
 	
 %% Title
 	\HRule\\[0.4cm]
-	{\huge\bfseries Title: FDI}\\[0.4cm] 
+	{\huge\bfseries Insert Title}\\[0.4cm] 
 	\HRule\\[0.4cm]
 	
 %% Date
@@ -105,6 +105,35 @@
 
 \section{Theoretical Background/Literature Review}
 
+\subsection{FDI}
+
+\subsection{PSM}
+Since (I guess) we will be focussing on ATE rather than ATT, we need to satisfy the following two assumptions: 
+
+\begin{enumerate}
+\item Assumption: \textbf{Unconfoundedness (CIA)} \\
+"\textit{[G]iven a set of observable covariates X which are not affected by treatment, potential outcomes are independent of treatment assignment}" (Caliendo \& Kopeinig, 2008: 35).
+
+\item Assumption: \textbf{Overlap} \\
+"\textit{persons with the same X values have a positive probability of being both participants and nonparticipants}"(Caliendo \& Kopeinig, 2008: 35).
+
+\end{enumerate}
+--> if Assumption 1 holds, all biases due to observable components can be removed by conditioning on the propensity score (Imbens, 2004).
+
+\subsubsection*{Binary Treatment}
+Difference between logit and probit lies in the link function. Logit assumes a log-distribution of residuals, probit assumes a normal distribution. Heteroskedastic probit models can account for non-constant error variances --> Check for heteroskedasticity?
+
+\subsubsection*{Multiple Treatments}
+The multinomial probit model is the preferable option compared to logit. Alternatively, just run several binary ones (more complicated but also more robust to errors).
+
+\subsubsection*{Variable selection}
+\begin{itemize}
+\item outcome variable must be independent of treatment conditional on the pscore (CIA)
+\item Only variables that influence simultaneously the participation decision and the outcome variable should be included (based on theory and empirical findings)
+\item variables should either be fixed over time or measured before participation
+
+
+\end{itemize}
 
 \section{Data and Descriptive Analysis}
 
