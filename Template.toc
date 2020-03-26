@@ -5,6 +5,6 @@
 \contentsline {section}{\numberline {2}Special Characters}{1}
 \contentsline {section}{\numberline {3}Tables/Graphs etc.}{1}
 \contentsline {subsection}{\numberline {3.1}Stata Tables}{1}
-\contentsline {subsection}{\numberline {3.2}Example Table}{2}
+\contentsline {subsection}{\numberline {3.2}Example}{2}
 \contentsline {section}{\numberline {4}Formulas}{3}
 \contentsline {subsection}{\numberline {4.1}Import files}{3}
