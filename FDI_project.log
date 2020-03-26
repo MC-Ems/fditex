@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.23)  26 MAR 2020 18:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.23)  26 MAR 2020 21:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -882,48 +882,32 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 132.
- [1]
-
-Package natbib Warning: Citation `michael1973education' on page 2 undefined on 
-input line 154.
-
-
-Package natbib Warning: Citation `heckman1980life' on page 2 undefined on input
- line 154.
-
-
-Package natbib Warning: Citation `biddle1990sleep' on page 2 undefined on input
- line 155.
-
-[2]
-No file FDI_project.bbl.
-
-Package natbib Warning: There were undefined citations.
-
-[3] (./FDI_project.aux) ) 
+ [1] [2]
+(./FDI_project.bbl) [3] (./FDI_project.aux) ) 
 Here is how much of TeX's memory you used:
- 17214 strings out of 492649
- 344220 string characters out of 6129621
- 468380 words of memory out of 5000000
- 20910 multiletter control sequences out of 15000+600000
+ 17229 strings out of 492649
+ 344547 string characters out of 6129621
+ 468479 words of memory out of 5000000
+ 20923 multiletter control sequences out of 15000+600000
  547360 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,6n,54p,10362b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm
--super/cm-super-t1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm
--super/sfbx1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-s
-uper/sfbx2074.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-sup
-er/sfcc1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super
-/sfcc1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/s
-fcc1728.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfr
-m1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1
-200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx109
-5.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1200.
-pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on FDI_project.pdf (6 pages, 1042592 bytes).
+{/usr/local/texlive/2018/texmf-dis
+t/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2018/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/f
+onts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2018/texmf-dist/fon
+ts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/texmf-dist/fonts
+/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
+ype1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
+/public/cm-super/sfrm1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
+ublic/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
+lic/cm-super/sfsx1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
+c/cm-super/sfsx1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/
+cm-super/sfsx1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm
+-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-s
+uper/sfti1200.pfb>
+Output written on FDI_project.pdf (6 pages, 1045564 bytes).
 PDF statistics:
  77 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream
