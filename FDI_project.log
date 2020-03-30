@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.10)  30 MAR 2020 13:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.10)  30 MAR 2020 16:34
 entering extended mode
 **./FDI_project.tex
 (FDI_project.tex
@@ -539,11 +539,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--170
 
 [2] [3] (FDI_project.bbl) [3] (FDI_project.aux) ) 
 Here is how much of TeX's memory you used:
- 9977 strings out of 481565
- 205617 string characters out of 2913711
+ 9974 strings out of 481565
+ 205582 string characters out of 2913711
  537756 words of memory out of 3000000
- 25072 multiletter control sequences out of 15000+200000
- 550104 words of font info for 65 fonts, out of 3000000 for 9000
+ 25070 multiletter control sequences out of 15000+200000
+ 549767 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,6n,56p,10132b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Emilie\AppData\Loca
@@ -555,17 +555,16 @@ pk> <C:\Users\Emilie\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi60
 en/ec/dpi600\ecrm1095.pk> <C:\Users\Emilie\AppData\Local\MiKTeX\2.9\fonts/pk/lj
 four/jknappen/ec/dpi600\ecsx1095.pk> <C:\Users\Emilie\AppData\Local\MiKTeX\2.9\
 fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\Emilie\AppData\Local\
-MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Emilie\App
-Data\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users
-\Emilie\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk
+MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Emilie\App
+Data\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users
+\Emilie\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk
 > <C:\Users\Emilie\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
-ecbx2074.pk> <C:\Users\Emilie\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen
-/ec/dpi600\eccc1200.pk> <C:\Users\Emilie\AppData\Local\MiKTeX\2.9\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\Emilie\AppData\Local\MiKTeX\2.9\fo
-nts/pk/ljfour/jknappen/ec/dpi600\eccc1728.pk>
-Output written on FDI_project.pdf (7 pages, 961253 bytes).
+eccc1200.pk> <C:\Users\Emilie\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen
+/ec/dpi600\eccc1440.pk> <C:\Users\Emilie\AppData\Local\MiKTeX\2.9\fonts/pk/ljfo
+ur/jknappen/ec/dpi600\eccc1728.pk>
+Output written on FDI_project.pdf (7 pages, 961244 bytes).
 PDF statistics:
- 412 PDF objects out of 1000 (max. 8388607)
+ 408 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
