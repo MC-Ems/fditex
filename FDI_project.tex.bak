@@ -164,7 +164,7 @@ Our analysis is based on observational firm-level data. The dataset comprises 11
 	\caption{Pre-Matching Balancing Test}
 	\centering
     \begin{adjustbox}{max width=1.0\linewidth}
-		\import{C:\Users\Emilie\Documents\Emilie\Uni\Master\Nottingham\2_Appl_Microeconometrics\fdimatching_clean\04_results\02_Descriptive_Analysis\} {baltest_byfdi_pre.tex}
+		\input{baltest_byfdi_pre.tex}
 		\label{tab1}
     \end{adjustbox}
 \end{table}

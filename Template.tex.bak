@@ -118,9 +118,9 @@ To make the citations and references appear, do the following:
 	\item press F1 (compiling PDF)
 	 Make sure it runs without errors. If it does, the logfile will report "Process exited normally"
 	\item press F11 (Running bibliography file)
-	 Make sure this runs without errors as well) 
-	\item press F1 twice 
-	(not exactly sure why, but TexMaker needs two compliations to make the citations appear) 
+	Make sure this runs without errors as well) 
+	\item 
+press F1 twice (not exactly sure why, but TexMaker needs two compliations to make the citations appear)
 
 \end{enumerate}
 
