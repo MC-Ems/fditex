@@ -152,10 +152,10 @@ We could drop all the state-owned enterprises, because wages are likely not to c
 comment: delete table 1?  I made two separate tables for wages and TFP. Putting the results in one table makes the table too long. However, if we decide to delete e.g. ATET for NN1 we could merge the tables again. 
 
 \begin{table}[htbp]\centering
-\caption{Total Factor Productivity and Wages, NN1}
+\caption{logWages and Total Factor Productivity}
 \begin{tabular}{lcc} \hline
- & Nearest Neighbour & Nearest Neighbour \\
-VARIABLES & logwages2017 & TFP2017 \\ \hline
+ &NN1 & NN1\\
+VARIABLES & logWages2017 & TFP2017 \\ \hline
  &  &  \\
 r1vs0.FDI2016 & 0.139** & 0.287*** \\
  & (0.067) & (0.040) \\
@@ -184,16 +184,16 @@ r1vs0.FDI2016 & 0.139** & 0.037 & 0.187*** & 0.137 \\
 
 \begin{table}[htbp]\centering
 \caption{TFP 2017}
-\begin{tabular}{lccccc} \hline
- & (NN1) & (NN1) & (3) & (4) & (5) \\
-VARIABLES & TFP2017 & TFP2017 & TFP2017 & TFP2017 & TFP2017 \\ \hline
- &  &  &  &  &  \\
-r1vs0.FDI2016 & 0.287*** & 0.287*** & 0.312*** & 0.279*** & 0.318*** \\
- & (0.040) & (0.040) & (0.057) & (0.033) & (0.045) \\
- &  &  &  &  &  \\
- Observations & 11,323 & 11,323 & 11,323 & 11,317 & 11,317 \\ \hline
-\multicolumn{6}{c}{ Standard errors in parentheses} \\
-\multicolumn{6}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
+\begin{tabular}{lcccc} \hline
+ & NN1 & NN1 & NN5 & NN5 \\
+VARIABLES & ATE & ATET & ATE & ATET \\ \hline
+ &  &  &  &  \\
+r1vs0.FDI2016 & 0.287*** & 0.312*** & 0.279*** & 0.318*** \\
+ & (0.040) & (0.057) & (0.033) & (0.045) \\
+ &  &  &  &  \\
+ Observations & 11,323 & 11,323 & 11,317 & 11,317 \\ \hline
+\multicolumn{5}{c}{ Standard errors in parentheses} \\
+\multicolumn{5}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
 \end{tabular}
 \end{table}
 
