@@ -6,5 +6,5 @@
 \contentsline {section}{\numberline {3}Empirical Specification}{2}
 \contentsline {subsection}{\numberline {3.1}Econometric approach}{2}
 \contentsline {subsection}{\numberline {3.2}Main Results}{2}
-\contentsline {section}{\numberline {4}FDI by type}{3}
-\contentsline {section}{\numberline {5}Summary/ Conclusion}{3}
+\contentsline {section}{\numberline {4}FDI by type}{4}
+\contentsline {section}{\numberline {5}Summary/ Conclusion}{4}
