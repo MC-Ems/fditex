@@ -6,7 +6,6 @@
 \usepackage[T1]{fontenc}
 \usepackage{setspace}
 \onehalfspacing
-\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf} % Includes an old command that is part of some package in here (just to make sure erverything runs)
 
 % Page numbers
 \newcommand{\sectionnumbering}[1]{%
@@ -27,17 +26,13 @@
 \usepackage{graphicx}
 \graphicspath{{Graphics/}}
 \usepackage{adjustbox}
-
-% Table packages
-\usepackage{pdflscape} %To create landscape environments
-\usepackage{booktabs,caption}
-\usepackage{threeparttable} %For nice tables
-\usepackage{csvsimple} %To import excel tables 
-\usepackage{import}
+\usepackage{lscape}
 
 % Bilbiography settings
 \usepackage{natbib}
 \bibliographystyle{apalike}
+\setcitestyle{authoryear,open={(},close={)}}
+
 
 
 % -------------------------------------------------------------
@@ -61,7 +56,7 @@
 	
 %% Title
 	\HRule\\[0.4cm]
-	{\huge\bfseries Insert Title}\\[0.4cm] 
+	{\huge\bfseries The effect of FDI on Total Factor Productivity and Wages}\\[0.4cm] 
 	\HRule\\[0.4cm]
 	
 %% Date
@@ -75,10 +70,10 @@
 			Professor Sourafel \textsc{Girma} 
 			\vfill\vfill 
 			\textit{Authors}\\
-			Nelly  \textsc{Lehn} (20214338)\\
-			Yonesse \textsc{Paris} (20115536)\\
-			Thea  \textsc{Zoellner} (20216019)\\
-			Georg  \textsc{Schneider} (20214032)\\
+			Yonesse \textsc{Paris} (stud. n°)\\
+			Nelly  \textsc{Lehn} (stud. n°)\\
+			Thea  \textsc{Zoellner} (stud. n°)\\
+			Georg  \textsc{Schneider} (stud. n°)\\
 			Emilie \textsc{Bechtold} (20214031)
 		\end{flushleft}
 	\vfill 
@@ -104,8 +99,6 @@
 \pagenumbering{arabic}
 \sectionnumbering{arabic}
 
-\section{Introduction}
-
 
 
 \section{Theoretical Background/Literature Review}
@@ -117,10 +110,10 @@ Since (I guess) we will be focussing on ATE rather than ATT, we need to satisfy 
 
 \begin{enumerate}
 \item Assumption: \textbf{Unconfoundedness (CIA)} \\
-"\textit{[G]iven a set of observable covariates X which are not affected by treatment, potential outcomes are independent of treatment assignment}"   \citep[p.~35]{CaliendoHujerThomsen2008}	 
+"\textit{[G]iven a set of observable covariates X which are not affected by treatment, potential outcomes are independent of treatment assignment}" (Caliendo \& Kopeinig, 2008: 35).
 
 \item Assumption: \textbf{Overlap} \\
-"\textit{persons with the same X values have a positive probability of being both participants and nonparticipants}" \citet [p.~35]{Caliendo08}
+"\textit{persons with the same X values have a positive probability of being both participants and nonparticipants}"(Caliendo \& Kopeinig, 2008: 35).
 
 \end{enumerate}
 --> if Assumption 1 holds, all biases due to observable components can be removed by conditioning on the propensity score (Imbens, 2004).
@@ -145,73 +138,67 @@ Strategies for the selection of variables to be used in estimating the propensit
 
 
 \section{Data and Descriptive Analysis}
-Our analysis is based on observational firm-level data. The dataset comprises 11,323 firms, of which 4,460 received FDI in 2016. The FDIs are categorized into three different types: Exports-oriented, technology intensive and domestic market seeking FDI. The outcome variables TFP and wages were measured in 2017. The baseline variables were measured in 2015 (one year prior to the intervention) and comprise information on:
-
-\begin{itemize}
-\item Ownership (listed company, subsidiary, independent or state owned)
-\item Technology intensity (low, medium low, medium high or high-tech industries) 
-\item Access to a port
-\item Wages (as log variable)
-\item Total Factor Productivity (TFP)
-\item Firm size (measured in number of employees, log variable)
-\item Debt (as log variable)
-\item Export intensity
-\item Whether the firm has invested in Research and Design
-\end{itemize}
-
-
-\begin{table}[ht!]
-	\caption{Pre-Matching Balancing Test}
-	\centering
-    \begin{adjustbox}{max width=1.0\linewidth}
-		\import{C:\Users\Emilie\Documents\Emilie\Uni\Master\Nottingham\2_Appl_Microeconometrics\fdimatching_clean\04_results\02_Descriptive_Analysis\} {baltest_byfdi_pre.tex}
-		\label{tab1}
-    \end{adjustbox}
-\end{table}
-\FloatBarrier 
-
 
 \section{Empirical Specification}
-
+\subsection{Econometric approach}
 \textbf{Reminder of a thought we had}\\
 We could drop all the state-owned enterprises, because wages are likely not to change just because the firm received foreign investment. 
 
-\section{Results}
+\subsection{Main Results}
 
-
-\begin{table}[ht!]
-	\caption{Covariate Balance comparing logit and probit model}
-	\centering
-    \begin{adjustbox}{max width=1.0\linewidth}
-		\input{covbal_tables.tex}
-		\label{tab1}
-    \end{adjustbox}
+\begin{table}[htbp]\centering
+\caption{Total Factor Productivity and Wages}
+\begin{tabular}{lcc} \hline
+ & Nearest Neighbour & Nearest Neighbour \\
+VARIABLES & logwages2017 & TFP2017 \\ \hline
+ &  &  \\
+r1vs0.FDI2016 & 0.139** & 0.287*** \\
+ & (0.067) & (0.040) \\
+ &  &  \\
+ Observations & 11,323 & 11,323 \\ \hline
+\multicolumn{3}{c}{ Standard errors in parentheses} \\
+\multicolumn{3}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
+\end{tabular}
 \end{table}
-\FloatBarrier 
-
-\section{Discussion/Conclusion}
-For citation: \\
-you have to add your reference firstly in bibCG. After having done so you can always include the reference in the actual file as follows: \\
- \citet{biddle1990sleep}\\
-\citep[p.~35]{CaliendoHujerThomsen2008}	 \\
 
 
-Thoughts on what we could write for discussion/limits of our study: 
-\begin{enumerate}
-\item Do not know much about the context of the treatment (so cannot really rule out anticipation-effects?)
-\item Would have been interesting to extend the study to several years after the treatment. Do effects persist? Do they vanish? 
-\end{enumerate}
+
+\begin{table}[htbp]\centering
+\caption{Total Factor Productivity 2017}
+\begin{tabular}{lcccccc} \hline
+ &5NN& 5NN & IPW  & IPW  &AIWP \\
+VARIABLES &ATE& ATET& ATE  & ATET  & ATE & \\ \hline
+ &  &  & & &  \\
+r1vs0.FDI2016 & .279***& .318***& .285***  & 0.308*** &   0.306***   \\
+ \bigskip
+ &(0.033)&(0.045) & (0.029)  & (0.045)  & (0.010)   \\ 
+0.FDI2016  &   &    &  \\
+P0mean &&&3.537***  &   3.307*** & 3.537***  \\
+&&&   (0.026) & (0.053) & (0.020) \\
+ &&&  &  &    \\
+ Observations & 11,323 & 11,323  & 11,323 & 11,323 & 11,323  \\ \hline
+\multicolumn{7}{c}{ Robust standard errors in parentheses} \\
+\multicolumn{7}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
+\end{tabular}
+\end{table}
+
+\newpage
+\section{FDI by type}
+
+\section{Summary/ Conclusion}
+
+
 
 
 \newpage
+
+\bibliography{bibCG}
+
 
 %-------------------------------------------------------------
 % References
 %-------------------------------------------------------------
-\addcontentsline{toc}{section}{References}	%Adds references to table of contents
-\bibliography{bibCG} 
-\newpage
-
+%\printbibliography (Not quite sure how this works yet...)
 
 %-------------------------------------------------------------
 % Appendix
@@ -220,6 +207,6 @@ Thoughts on what we could write for discussion/limits of our study:
 \section*{Appendix}
 \pagenumbering{roman}
 \sectionnumbering{Roman}
-\setcounter{page}{3} %May have to adjust this if we leave out list of tables or add something else
+\setcounter{page}{3} %%May have to adjust this if we leave out list of tables or add something else
 
 \end{document}
