@@ -141,17 +141,39 @@ Strategies for the selection of variables to be used in estimating the propensit
 
 \section{Empirical Specification}
 \subsection{Econometric approach}
+%-------------------------------------------------------------
+%  COMMENTS: DELETE later
+%---------------------------------------------------------
 \textbf{Reminder of a thought we had}\\
-We could drop all the state-owned enterprises, because wages are likely not to change just because the firm received foreign investment. 
+We could drop all the state-owned enterprises, because wages are likely not to change just because the firm received foreign investment. \\\\
+%-------------------------------------------------------------
+% Problem  of non-random treatment assignment + proposed Solution 
+%-------------------------------------------------------------
 
+1) Big model: including all variables does not seem to satisfy CIA???. Tech seems to predict treatment and control too well, especially for firms operating in the high-technology sector (TECH=4). High technology firms seem to have very low probability to receive treatment (see Graph). 
+As treatment is  highly probable to be not randomly assigned we use propensity score matching, assuming CIA. 
+
+In order to estimate the effect of FDI on TFP we firstly look at different model specifications as also model estimators. 
+As described before including TECH leads to very bad overlap, for which we exclude latter. Further, excluding TECH leads to better balance, as Table X shows.   Graph XY visualizes that excluding TECH yields a better overlap.l
+Specifying the effect of FDI on TFP for different types of TECH reduces the sample size drastically. The sample is unlikely to be representative. 
+Furthermore, "good" matching within TECH types is difficult, especially as more control  than observations treatment are available. 
+
+%-------------------------------------------------------------
+% Estimation Model 
+%-------------------------------------------------------------
+\subsection{Estimation Model}
+
+Do we have to / Can we include a formula describing our estimation model? 
+like in OLS y= ß0+Xß1+e
+
+
+%-------------------------------------------------------------
+% Results: Wages and TFP, NN1, NN5 (Table 1)
+%-------------------------------------------------------------
 \subsection{Main Results}
-
-%-------------------------------------------------------------
-% Table 1: Wages and TFP, NN1, NN5
-%-------------------------------------------------------------
-comment: delete table 1?  I made two separate tables for wages and TFP. Putting the results in one table makes the table too long. However, if we decide to delete e.g. ATET for NN1 we could merge the tables again. 
-
-QUESTION: NN1 is equal to psmatch?--> so in the command nn1 does not have to be specified, unlike nn5
+- COMMENT: delete table 1?  I made two separate tables for wages and TFP. Putting the results in one table makes the table too long. However, if we decide to delete e.g. ATET for NN1 we could merge the tables again. \\
+- QUESTION: NN1 is equal to psmatch?--> so in the command nn1 does not have to be specified, unlike nn5\\
+- Delete Wages??\\
 
 
 \begin{table}[htbp]\centering
@@ -232,6 +254,28 @@ P0mean &3.537***  &   3.307*** & 3.537***  \\
 \end{table}
 
 \newpage
+%-------------------------------------------------------------
+% Discussion
+%-------------------------------------------------------------
+\subsection{Discussion}
+Specify which estimator we prefer.\\
+- look at covariate balance \\
+==> choose "worst-best"estimator: Tell reasons why best estimator as also why Propensity Score Matching might not be the technique to use as CIA is not satisfied. 
+
+%-------------------------------------------------------------
+% Robustness
+%-------------------------------------------------------------
+\subsection{Robustness}
+Look at Robustness checks for chosen "worst-best" estimator \\
+-Model Specification: \\
+-Interaction Term\\
+-T-test : NN5 better than NN1, not possible for IPW, AIWP??
+
+
+
+
+
+
 \section{FDI by type}
 
 \section{Summary/ Conclusion}
