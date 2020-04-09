@@ -70,10 +70,10 @@
 			Professor Sourafel \textsc{Girma} 
 			\vfill\vfill 
 			\textit{Authors}\\
-			Yonesse \textsc{Paris} (stud. n°)\\
-			Nelly  \textsc{Lehn} (stud. n°)\\
-			Thea  \textsc{Zoellner} (stud. n°)\\
-			Georg  \textsc{Schneider} (stud. n°)\\
+			Yonesse \textsc{Paris} (stud. n)\\
+			Nelly  \textsc{Lehn} (20214338)\\
+			Thea  \textsc{Zoellner} (stud. n)\\
+			Georg  \textsc{Schneider} (stud. n)\\
 			Emilie \textsc{Bechtold} (20214031)
 		\end{flushleft}
 	\vfill 
@@ -161,15 +161,19 @@ Furthermore, "good" matching within TECH types is difficult, especially as more 
 Do we have to / Can we include a formula describing our estimation model? 
 like in OLS y= ß0+Xß1+e
 
-
+Matching with replacement minimizes propensity score distance between matched comparison units and treatment units => beneficial in terms of bias reduction -> following advice of Dehejia and Wahba (2002) of using with replacement if overlap is bad 
 %-------------------------------------------------------------
 % Results: Wages and TFP, NN1, NN5 (Table 1)
 %-------------------------------------------------------------
 \subsection{Main Results}
-- COMMENT: delete table 1?  I made two separate tables for wages and TFP. Putting the results in one table makes the table too long. However, if we decide to delete e.g. ATET for NN1 we could merge the tables again. \\
+- COMMENT: delete table 1 and merge table 2 and 3 to 'table 1' but 'expanding' table vertically, not horizontally\\
 - QUESTION: NN1 is equal to psmatch?--> so in the command nn1 does not have to be specified, unlike nn5\\
+- QUESTION: is our caliper too big? see DW (2002): use caliper of 0.0001\\
 - Delete Wages??\\
 
+The main findings of this paper are displayed in table 1. It reports the average treatment effects (ATE) and the average treatment effects on the treated (ATT) for the variables of interest, total factor productivity (TFP) and wages. We find positive and significant treatment effects for both outcomes. Column (1) and (2) are the results of a one-to-one propensity score matching with replacement. Receiving FDI leads to an increase in wages of 0.139 (how to interpret ATE - in log form?) but this effect vanishes and becomes insignificant when looking at the treated sample only. This suggests that if some firms receive FDI, this does not have an effect on the treated themselves but on those firms that did not even receive FDI (ODD or interesting??).  Choosing total factor productivity as an outcome variable instead implies that a firm that attracted FDI experiences a significant improvement in total factor productivity of 0.287 (?) one year later and this effect increases to 0.312 when looking at treated firms only. Similar results are obtained from a propensity score matching with five nearest neighbors and a caliper of 0.05. As shown in columns (3) and (4), the effects on total factor productivity are fairly similar to those in the first two columns. Both the ATE and the ATT for wages increase when matching with five nearest neighbors, but the ATT remains insignificant. \\
+
+COMMENT: include note under table that specifies which covariates were used in order to estimate the propensity score
 
 \begin{table}[htbp]\centering
 \caption{logWages and Total Factor Productivity}
