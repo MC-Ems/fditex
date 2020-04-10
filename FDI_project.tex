@@ -73,7 +73,7 @@
 			Yonesse \textsc{Paris} (stud. n)\\
 			Nelly  \textsc{Lehn} (20214338)\\
 			Thea  \textsc{Zoellner} (stud. n)\\
-			Georg  \textsc{Schneider} (stud. n)\\
+			Georg  \textsc{Schneider} (20214032)\\
 			Emilie \textsc{Bechtold} (20214031)
 		\end{flushleft}
 	\vfill 
@@ -122,7 +122,7 @@ Since (I guess) we will be focussing on ATE rather than ATT, we need to satisfy 
 Difference between logit and probit lies in the link function. Logit assumes a log-distribution of residuals, probit assumes a normal distribution. Heteroskedastic probit models can account for non-constant error variances --> Check for heteroskedasticity?
 
 \subsubsection*{Multiple Treatments}
-The multinomial probit model is the preferable option compared to logit. Alternatively, just run several binary ones (more complicated but also more robust to errors).
+The multinomial Logit model is the only available mutlinomial option. Additionally, we run several binary ones (more complicated but also more robust to errors).
 
 \subsubsection*{Variable selection}
 \begin{itemize}
@@ -149,6 +149,7 @@ advantage of sample: firm-level data -> can control for differences in productiv
 \textbf{Reminder of a thought we had}\\
 We could drop all the state-owned enterprises, because wages are likely not to change just because the firm received foreign investment. \\\\
 COMMENT: should unlog employment! $->$ gives much better t$-$differences in robustness check (see robust script last part)\\
+
 %-------------------------------------------------------------
 % Problem  of non-random treatment assignment + proposed Solution 
 %-------------------------------------------------------------
