@@ -181,14 +181,16 @@ COMMENT: include note under table that specifies which covariates were used in o
 
 \begin{table}[htbp]\centering
 \caption{Impact of FDI on TFP}
-\begin{tabular}{lcccccccc} \hline
- & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) \\
-VARIABLES & TFP2017 & TFP2017 & TFP2017 & TFP2017 & ATE & POmean & ATET & POmean \\ \hline
- &  &  &  &  &  &  &  &  \\
-r1vs0.FDI2016 & 0.257*** & 0.302*** & 0.246*** & 0.273*** & 0.245*** &  & 0.367*** &  \\
- & (0.038) & (0.040) & (0.028) & (0.022) & (0.013) &  & (0.013) &  \\
-0.FDI2016 &  &  &  &  &  & 3.510*** &  & 3.247*** \\
- &  &  &  &  &  & (0.020) &  & (0.033) \\
+\tiny
+\begin{tabular}{lccccccc} \hline
+ & NN1 & NN1 & NN5 & NN5 & IWP & IPW & AIWP \\
+VARIABLES & ATE & ATT & ATE & ATT & ATE & ATT & ATE\\ \hline
+ &  &  &  &  &  &  &  \\
+r1vs0.FDI2016 & 0.257*** & 0.302*** & 0.246*** & 0.273*** & 0.245***   & 0.367*** & 0.292***  \\
+ & (0.038) & (0.040) & (0.028) & (0.022) & (0.013)  & (0.013) & (0.006) \\
+0.FDI2016 & & & & & &\\
+P0  Means &  &  &  &    & 3.510***  & 3.247*** \\
+ &  &  &  &  & (0.020)  & (0.033) \\
  &  &  &  &  &  &  &  &  \\
  Observations & 11,323 & 11,323 & 11,321 & 11,321 & 11,323 & 11,323 & 11,323 & 11,323 \\ \hline
 \multicolumn{9}{c}{ Standard errors in parentheses} \\
@@ -215,10 +217,6 @@ VARIABLES & ATE  & ATET  & ATE & \\ \hline
 FDI & 0.285***  & 0.308*** &   0.306***   \\
  
  & (0.029)  & (0.045)  & (0.010)   \\
-
- 
-
-
 PO mean &3.537***  &   3.307*** & 3.537***  \\
 
  &   (0.026) & (0.053) & (0.020) \\
