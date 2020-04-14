@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {3}Empirical Specification}{2}
 \contentsline {subsection}{\numberline {3.1}Econometric approach}{2}
 \contentsline {subsection}{\numberline {3.2}Main Results}{3}
-\contentsline {subsection}{\numberline {3.3}Discussion}{7}
-\contentsline {subsection}{\numberline {3.4}Robustness}{7}
-\contentsline {section}{\numberline {4}FDI by type}{7}
-\contentsline {section}{\numberline {5}Summary/ Conclusion}{9}
+\contentsline {subsection}{\numberline {3.3}Discussion}{6}
+\contentsline {subsection}{\numberline {3.4}Robustness}{6}
+\contentsline {section}{\numberline {4}FDI by type}{6}
+\contentsline {section}{\numberline {5}Summary/ Conclusion}{8}
