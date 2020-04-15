@@ -165,7 +165,7 @@ Our analysis is based on observational firm-level data. The dataset comprises 11
 	\caption{Pre-Matching Balancing Test}
 	\centering
     \begin{adjustbox}{max width=1.0\linewidth}
-		\import{Users/Emilie/Documents/Emilie/Master/Nottingham/2_Appl_Microeconometrics/fditex/Graphics/} {baltest_byfdi_pre.tex}
+		\import{C:\Users\Emilie\Documents\Emilie\Master\Nottingham\2_Appl_Microeconometrics\fdimatching_deleteEXP\04_results\02_Descriptive_Analysis} {baltest_byfdi_pre.tex}
 		\label{tab1}
     \end{adjustbox}
 \end{table}
@@ -174,11 +174,21 @@ Our analysis is based on observational firm-level data. The dataset comprises 11
 
 \section{Empirical Specification}
 
-
+\textbf{Reminder of a thought we had}\\
+We could drop all the state-owned enterprises, because wages are likely not to change just because the firm received foreign investment. 
 
 \section{Results}
 
 
+\begin{table}[ht!]
+	\caption{Covariate Balance comparing logit and probit model}
+	\centering
+    \begin{adjustbox}{max width=1.0\linewidth}
+		\input{covbal_tables.tex}
+		\label{tab1}
+    \end{adjustbox}
+\end{table}
+\FloatBarrier 
 
 \section{Discussion/Conclusion}
 For citation: \\
