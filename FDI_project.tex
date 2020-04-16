@@ -1,7 +1,6 @@
 % -------------------------------------------------------------
 %		Preamble
 %--------------------------------------------------------------
-% !TeX spellcheck = uk_UK
 %Document Settings
 \documentclass[a4paper,11pt]{scrartcl}
 \usepackage[T1]{fontenc}
@@ -146,7 +145,7 @@ Strategies for the selection of variables to be used in estimating the propensit
 
 
 \section{Data and Descriptive Analysis}
-Our analysis is based on observational firm-level data. The dataset comprises 11,323 firms, of which 4,460 received FDI in 2016. The FDIs are categorized into three different types: Exports-oriented, technology intensive and domestic market seeking FDI. The outcome variable TFP was measured in 2017. The baseline variables were measured in 2015 (one year prior to receiving FDI) and comprise information on:
+Our analysis is based on observational firm-level data. The dataset comprises 11,323 firms, of which 4,460 received FDI in 2016. The FDIs are categorized into three different types: Exports-oriented, technology intensive and domestic market seeking FDI. The outcome variables TFP and wages were measured in 2017. The baseline variables were measured in 2015 (one year prior to the intervention) and comprise information on:
 
 \begin{itemize}
 \item Ownership (listed company, subsidiary, independent or state owned)
@@ -165,7 +164,7 @@ Our analysis is based on observational firm-level data. The dataset comprises 11
 	\caption{Pre-Matching Balancing Test}
 	\centering
     \begin{adjustbox}{max width=1.0\linewidth}
-		\import{Users/Emilie/Documents/Emilie/Master/Nottingham/2_Appl_Microeconometrics/fditex/Graphics/} {baltest_byfdi_pre.tex}
+		\import{C:\Users\Emilie\Documents\Emilie\Uni\Master\Nottingham\2_Appl_Microeconometrics\fdimatching_clean\04_results\02_Descriptive_Analysis\} {baltest_byfdi_pre.tex}
 		\label{tab1}
     \end{adjustbox}
 \end{table}
@@ -174,11 +173,21 @@ Our analysis is based on observational firm-level data. The dataset comprises 11
 
 \section{Empirical Specification}
 
-
+\textbf{Reminder of a thought we had}\\
+We could drop all the state-owned enterprises, because wages are likely not to change just because the firm received foreign investment. 
 
 \section{Results}
 
 
+\begin{table}[ht!]
+	\caption{Covariate Balance comparing logit and probit model}
+	\centering
+    \begin{adjustbox}{max width=1.0\linewidth}
+		\input{covbal_tables.tex}
+		\label{tab1}
+    \end{adjustbox}
+\end{table}
+\FloatBarrier 
 
 \section{Discussion/Conclusion}
 For citation: \\
