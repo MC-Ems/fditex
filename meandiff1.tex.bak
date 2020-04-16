@@ -1,0 +1,26 @@
+
+\begin{table}[!htbp]
+\centering
+\caption{Difference in Pre-Treatment Covariate Means}
+	\label{tab:meandiff1}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{\extracolsep{5pt}}lccc}
+\\[-1.8ex]\hline \hline \\[-1.8ex]
+  & (1)  & (2)  & T-test  \\
+ & Control  & Treatment  & Difference (1)-(2) \\ \hline \\[-1.8ex] 
+Technology intensity & \begin{tabular}[t]{@{}c@{}} 2.565 \\ (0.014) \end{tabular} & \begin{tabular}[t]{@{}c@{}} 1.838 \\ (0.015) \end{tabular} &     0.728*** \rule{0pt}{0pt}\\
+Access to port & \begin{tabular}[t]{@{}c@{}} 0.273 \\ (0.005) \end{tabular} & \begin{tabular}[t]{@{}c@{}} 0.467 \\ (0.007) \end{tabular} &    -0.194*** \rule{0pt}{3ex}\\
+Log wages & \begin{tabular}[t]{@{}c@{}} 7.529 \\ (0.046) \end{tabular} & \begin{tabular}[t]{@{}c@{}} 7.031 \\ (0.057) \end{tabular} &     0.498*** \rule{0pt}{3ex}\\
+TFP & \begin{tabular}[t]{@{}c@{}} 3.185 \\ (0.025) \end{tabular} & \begin{tabular}[t]{@{}c@{}} 2.821 \\ (0.030) \end{tabular} &     0.364*** \rule{0pt}{3ex}\\
+Log employment & \begin{tabular}[t]{@{}c@{}} 3.766 \\ (0.037) \end{tabular} & \begin{tabular}[t]{@{}c@{}} 5.405 \\ (0.041) \end{tabular} &    -1.639*** \rule{0pt}{3ex}\\
+Log debts & \begin{tabular}[t]{@{}c@{}} 0.511 \\ (0.004) \end{tabular} & \begin{tabular}[t]{@{}c@{}} 0.493 \\ (0.005) \end{tabular} &     0.019*** \rule{0pt}{3ex}\\
+Export intensity & \begin{tabular}[t]{@{}c@{}} 0.131 \\ (0.001) \end{tabular} & \begin{tabular}[t]{@{}c@{}} 0.204 \\ (0.001) \end{tabular} &    -0.073*** \rule{0pt}{3ex}\\
+R\&D dummy & \begin{tabular}[t]{@{}c@{}} 0.117 \\ (0.004) \end{tabular} & \begin{tabular}[t]{@{}c@{}} 0.128 \\ (0.005) \end{tabular} &    -0.012* \rule{0pt}{3ex}\\ \\
+Observations & 6863 & 4460 &\rule{0pt}{3ex}\\
+\hline \hline \\[-1.8ex]
+%%% This is the note. If it does not have the correct margins, edit text below to fit to table size.
+\multicolumn{4}{@{}p{1\textwidth}}
+{\textit{Notes}: Columns (1) and (2) show the pre-treatment covariate means of the control and treatment group respectively. Standard errors are displayed in paratheses. The values displayed for t-tests are the differences in the means across the groups. ***, **, and * indicate significance at the 1, 5, and 10 percent critical level. }
+\end{tabular}
+\end{adjustbox}
+\end{table}
