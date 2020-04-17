@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.23)  17 APR 2020 09:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.23)  17 APR 2020 14:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -933,25 +933,25 @@ Overfull \hbox (45.59654pt too wide) in paragraph at lines 174--187
  [][] 
  []
 
-
-Overfull \hbox (6.38705pt too wide) in paragraph at lines 250--263
+[2] [3]
+Overfull \hbox (6.38705pt too wide) in paragraph at lines 270--283
  [][] 
  []
 
 
-Package natbib Warning: Citation `biddle1990sleep' on page 2 undefined on input
- line 270.
+Package natbib Warning: Citation `biddle1990sleep' on page 4 undefined on input
+ line 290.
 
 
-Package natbib Warning: Citation `CaliendoHujerThomsen2008' on page 2 undefined
- on input line 271.
+Package natbib Warning: Citation `CaliendoHujerThomsen2008' on page 4 undefined
+ on input line 291.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--272
+Underfull \hbox (badness 10000) in paragraph at lines 288--292
 
  []
 
-[2] [3] [4]
+[4] [5]
 No file FDI_project.bbl.
 
 Package natbib Warning: There were undefined citations.
@@ -960,7 +960,7 @@ Package natbib Warning: There were undefined citations.
 Here is how much of TeX's memory you used:
  19660 strings out of 492649
  394368 string characters out of 6129621
- 537112 words of memory out of 5000000
+ 531112 words of memory out of 5000000
  23304 multiletter control sequences out of 15000+600000
  549239 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -982,10 +982,10 @@ fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></u
 sr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr
 /local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on FDI_project.pdf (8 pages, 1090256 bytes).
+Output written on FDI_project.pdf (9 pages, 1093498 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 100 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
