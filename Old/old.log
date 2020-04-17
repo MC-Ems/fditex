@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.23)  14 APR 2020 20:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.23)  16 APR 2020 12:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -625,8 +625,11 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip73
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count278
+) (./old.aux
+
+LaTeX Warning: Label `' multiply defined.
+
 )
-No file old.aux.
 \openout1 = `old.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
@@ -643,7 +646,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
 LaTeX Font Info:    ... okay on input line 41.
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1enc.dfu
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1enc.dfu
 File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -827,20 +830,20 @@ LaTeX Font Info:    Try loading font information for T1+cmss on input line 89.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-No file old.toc.
+) (./old.toc)
 \tf@toc=\write3
 \openout3 = `old.toc'.
 
-[1]
-No file old.lot.
+
+[1] (./old.lot)
 \tf@lot=\write4
 \openout4 = `old.lot'.
 
-[2]
+ [2]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 129.
 
- (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -874,14 +877,14 @@ Overfull \hbox (3.39441pt too wide) in paragraph at lines 350--363
 No file old.bbl.
 [3] (./old.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17215 strings out of 492649
- 343895 string characters out of 6129621
- 472339 words of memory out of 5000000
- 20904 multiletter control sequences out of 15000+600000
+ 17226 strings out of 492649
+ 344074 string characters out of 6129621
+ 472386 words of memory out of 5000000
+ 20909 multiletter control sequences out of 15000+600000
  547332 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,8n,54p,10354b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -900,7 +903,7 @@ e/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/
 2018/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/20
 18/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb>
-Output written on old.pdf (13 pages, 226370 bytes).
+Output written on old.pdf (13 pages, 233629 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream
