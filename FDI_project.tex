@@ -210,22 +210,35 @@ Observations & 11,323 & 11,321 & 11,321 & 11,323 & 11,323 & 11,323 & 11,323\\  \
 \section{Analysis by Type}
 
 
-To further test the robustness of our results  we continue our analysis by looking at potential heterogeneity of the treatment effect across types of FDI. Doing so we can test the possibility that one specific type of Investment drives our previous results. From the data we can distinguish between three different types of FDI: (i) exports-oriented FDI, (ii) technology intensive FDI and (iii) domestic market seeking FDI. Table 5 shows their absolute and relative frequencies. It is possible, that for example only exports-oriented increased factor productivity. while the other two types had little or no impact.
+To further test the robustness of our results  we continue our analysis by looking at potential heterogeneity of the treatment effect across types of FDI. Doing so we can test the possibility that one specific type of Investment drives our previous results. From the data we can distinguish between three different types of FDI: (i) exports-oriented FDI, (ii) technology intensive FDI and (iii) domestic market seeking FDI. Table 5 shows their absolute and relative frequencies. It is possible, that for example only exports-oriented increased factor productivity while the other two types had little or no impact.
 
 
-\begin{table}[htbp]\centering
-\caption{Types of FDI}
+
+\begin{table}
+
+  \centering
+   \caption{Frequency of FDI Types} 
+
 \begin{tabular}{lcc} \hline
- FDI type&No. \\
+ FDI type&Abs. Freq.&Rel. Freq. \\
 \hline
-No FDI&6,863.0 \\
-Exports-oriented FDI&940 \\
-Technology intensive FDI&1,555 \\
- Domestic market seeking FDI&1,965 \\
-Total&11,323.0 \\
+No FDI&6,863 & 61\% \\
+Exports-oriented FDI&940 & 8\%\\
+Technology intensive FDI & 1,555 & 14\% \\
+Domestic market seeking FDI & 1,965 & 17\% \\
+Total & 11,323 & 100\% \\
 \end{tabular}
 \end{table}
 
+
+To test for this possibility we estimate IPW and augmented IPW models with multi-valued treatment effects. The matching covariates are the same as in the previous model and the regression adjustment model is the same as that for propensity score estimation. The covariate balance is good in both models, 
+
+
+In table 6 results from IPW and AIPW regressions are shown, where the treatment model is a Multinomial Logit with FDI types as unordered outcomes. The results show that all three types of FDI have positive and significant effects, so all types of FDI have a positive and significant effect on TFP. The effect sizes of the AIPW in table six are very close to those from the single valued treatment in table 4. Relative to the potential outcome mean of 3.5, the different types of FDI increase Factor productivity by 14\% of a standard deviation at at the 99\% level of significance.	The potential outcomes mean for receiving no FDI is 5.7\% below the sample mean. 
+
+The Inverse Probability Weighting Model gives us somewhat bigger differences in effect sizes between the types. The difference between the bigger effect of Exports oriented FDI and the smaller effect of Technology intensive FDI amounts to 4\% of a standard deviation. Including interaction terms between continuous and categorical regressors 
+
+With the AIPW being a doubly robust estimators and rather small differences in the IPW estimator we take these results to suggest that all types of FDI have similar positive impacts on factor productivity. 
 
 
 \begin{table}[htbp]\centering
@@ -233,21 +246,24 @@ Total&11,323.0 \\
 \begin{tabular}{lcc} \hline
  & (1) & (2)  \\
 VARIABLES & AIPW & IPW \\ \hline
- &    &  \\
-Exports oriented FDI &  0.141*** &   0.155***  \\
- & (0.006) &   (0.028)   \\
-Technology intensive FDI &0.139*** &   0.114***   \\
- & (0.005) &   (0.016)   \\
-Domestic market seeking FDI  &0.143***   & 0.123*** \\
- & (0.004)   & (0.010)  \\
-PO Means & -0.057*** &   -0.071***    \\
- &  (0.009) &   (0.010) \\
  &  &      \\
- Observations & 11,323  & 11,323  \\ \hline
+Exports-oriented FDI & 0.141***&   0.155***   \\
+ & (0.006)   & (0.028)  \\
+Technology intensive FDI & 0.139*** &   0.114***   \\
+ & (0.005)   & (0.016)   \\
+Domestic market seeking FDI & 0.143*** &   0.123***  \\
+ & (0.004)   & (0.010)   \\
+PO Means &  -0.057*** &   -0.071*** \\
+ &   (0.009) &   (0.010) \\
+ &  &      \\
+ Observations & 11,323 & 11,323  \\ \hline
 \multicolumn{3}{c}{ Robust standard errors in parentheses} \\
 \multicolumn{3}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
 \end{tabular}
 \end{table}
+
+To account for the possibility that the choice of the FDI type does not satisfy the IIA assumption we further estimate separate logit models for the two estimator types. The results, reported in table 7, are very similar to those obtained from a multinomial specification, suggesting that the IIA assumption holds.  
+
 
 \begin{table}[htbp]\centering
 \caption{Seperate Logits for FDI Type}
