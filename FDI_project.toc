@@ -1,11 +1,11 @@
 \babel@toc {english}{}
-\contentsline {section}{\numberline {1}Introduction}{1}%
-\contentsline {section}{\numberline {2}Theoretical Background/Literature Review}{1}%
-\contentsline {subsection}{\numberline {2.1}FDI}{1}%
-\contentsline {subsection}{\numberline {2.2}PSM}{1}%
-\contentsline {section}{\numberline {3}Data and Descriptive Analysis}{2}%
-\contentsline {section}{\numberline {4}Empirical Specification}{2}%
-\contentsline {subsection}{\numberline {4.1}Effect of FDI on TFP}{2}%
-\contentsline {section}{\numberline {5}Analysis by Type}{2}%
-\contentsline {section}{\numberline {6}Discussion/Conclusion}{2}%
-\contentsline {section}{References}{iii}%
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}Theoretical Background/Literature Review}{1}
+\contentsline {subsection}{\numberline {2.1}FDI}{1}
+\contentsline {subsection}{\numberline {2.2}PSM}{1}
+\contentsline {section}{\numberline {3}Data and Descriptive Analysis}{2}
+\contentsline {section}{\numberline {4}Empirical Specification}{2}
+\contentsline {subsection}{\numberline {4.1}Effect of FDI on TFP}{2}
+\contentsline {section}{\numberline {5}Analysis by Type}{2}
+\contentsline {section}{\numberline {6}Discussion/Conclusion}{2}
+\contentsline {section}{References}{iii}
