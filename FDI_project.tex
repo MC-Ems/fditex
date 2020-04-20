@@ -183,24 +183,32 @@ Total & 11,323 & 100\% \\
 
 \subsection{Effect of FDI on TFP}
 
-\begin{table}[htbp]\centering
-\caption{Impact of FDI on TFP-Standardized}
-\tiny
-\begin{tabular}{lcccccccccc} \hline
- & NN1 & NN1 & NN5 & NN5 & IPW & IPW & IPW & IPW & AIPW & AIPW \\
-VARIABLES & ATE & ATT & ATE& ATT & ATE & POmean & ATET & POmean & ATE & POmean \\ \hline
- &  &  &  &  &  &  &  &  &  &  \\
-r1vs0.FDI2016 & 0.125*** & 0.147*** & 0.119*** & 0.133*** & 0.119*** &  & 0.179*** &  & 0.142*** &  \\
- & (0.019) & (0.020) & (0.013) & (0.011) & (0.006) &  & (0.006) &  & (0.003) &  \\
-0.FDI2016 &  &  &  &  &  & -0.071*** &  & -0.199*** &  & -0.057*** \\
- &  &  &  &  &  & (0.010) &  & (0.016) &  & (0.009) \\
- &  &  &  &  &  &  &  &  &  &  \\
- Observations & 11,323 & 11,323 & 11,321 & 11,321 & 11,323 & 11,323 & 11,323 & 11,323 & 11,323 & 11,323 \\ \hline
-\multicolumn{11}{c}{ Standard errors in parentheses} \\
-\multicolumn{11}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
+\begin{table}
+ \centering
+   \caption{ATE of FDI on TFP}
+\begin{tabular}{lcccc} \hline
+ & NN1 & NN5\textsuperscript{a} & IPW & AIWP \\
+ & (1) & (2) & (3)  & (4) \\ \hline
+ &  &  &  &    \\
+r1vs0.FDI2016 & 0.130*** & 0.114*** & 0.122***  & 0.122***   \\
+ & (0.015) & (0.011) & (0.007) &   (0.007)  \\
+0.FDI2016 &  &  &  &    \\
+P0 Means & & & -0.068*** & -0.068***\\
+&  &  & (0.010)  &  (0.010) \\
+&  &  &  &    \\
+ Observations & 11,323 & 11,318 & 11,323 & 11,323 \\ \hline
+\multicolumn{5}{c}{ Standard errors in parentheses} \\
+\multicolumn{5}{c}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
 \end{tabular}
+\begin{tablenotes}
+      \tiny
+	\item\ Covariates include, unless otherwise specified: Ownership, Technology Intensity, Research\&Development, logarithm of Wages, Total Factor Productivity, Employment and Debts, all measured in 2015. 
+	\item\ All shown coefficients are normalized for better interpretation. 
+	\item\textsuperscript{a} We use the Propensity Score Matching method with five nearest neihbors and replacement as well as a 0.05 caliper. 
+\end{tablenotes}
 \end{table}
- 
+
+
 
 \subsection{Robustness of Results}
 
