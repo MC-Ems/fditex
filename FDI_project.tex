@@ -254,10 +254,12 @@ To further test the robustness of our results  we continue our analysis by looki
 
 
 
-To test for this possibility we estimate IPW and augmented IPW models with multi-valued treatment effects. The matching covariates are the same as in the previous model and the regression adjustment model is the same as that for propensity score estimation. The covariate balance is good in both models, 
+To test for this possibility we estimate an augmented IPW model with multi-valued treatment effects. The matching covariates are the same as in the previous model and the regression adjustment specification is the same as that for propensity score estimation. The covariate balance is good, with the highest standardized differences of 5.7\% and a minimum variance ratio of 0.55 for employment (though all other variance ratios are close to 1).
+
+Second, we estimate an IPW model to check if it yields similar estimates without regression adjustment. The covariate balance in this model is practially the same. Finally, we estimate a set of AIPW models where we restrict the sample to one type of treatment each. This allows for the IIA assumption to be relaxed which is required for the Mulitnomial Logit model. The first logit model has a maximum standardized difference of 12\% for employment and and a maximum variance ratio of 1.36 for the same variable. The second model fares better in terms of standardized differences but has has a variance ratio of 1.88 for employment. The third model has great balance in all variables. The overlap assumption is satisfied for all treatment levels as can be seen in graph X. 
 
 
-In table 6 results from IPW and AIPW regressions are shown, where the treatment model is a Multinomial Logit with FDI types as unordered outcomes. The results show that all three types of FDI have positive and significant effects, so all types of FDI have a positive and significant effect on TFP. The effect sizes of the AIPW in table six are very close to those from the single valued treatment in table 4. Relative to the potential outcome mean of 3.5, the different types of FDI increase Factor productivity by 14\% of a standard deviation at at the 99\% level of significance.	The potential outcomes mean for receiving no FDI is 5.7\% below the sample mean. 
+In table X results the results from the typewise analysis are shown. In the AIPW Multinomial specification the differences in ATE between different types of FDI are below half a percent of a standard deviation. This suggests, that all types of FDI increase factor productivtiy by essentially the same margin. The estimated effect size is close to the one estimated for FDI in tabl 2. In the IPW specification the differences are a bit larger but no bigger than 4.5\% of a standard deviation. The seperate logit models also yield essentially the same effect sizes as the multinomial specification. We thus conclude that all types of FDI increase productivity by 
 
 The Inverse Probability Weighting Model gives us somewhat bigger differences in effect sizes between the types. The difference between the bigger effect of Exports oriented FDI and the smaller effect of Technology intensive FDI amounts to 4\% of a standard deviation. Including interaction terms between continuous and categorical regressors 
 
@@ -288,6 +290,7 @@ PO Means &   -0.057*** &   -0.068*** &-0.012  &-0.025**  & -0.017    \\
 
 To account for the possibility that the choice of the FDI type does not satisfy the IIA assumption we further estimate separate logit models for the two estimator types. The results, reported in table 7, are very similar to those obtained from a multinomial specification, suggesting that the IIA assumption holds.  
 
+\includegraphics[height=11cm]{mlog_overl_ppb.png}\\[0.5cm] 
 
 
 
