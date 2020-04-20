@@ -1,6 +1,5 @@
-\babel@toc {english}{}
+\select@language {english}
 \contentsline {table}{\numberline {1}{\ignorespaces Impact of FDI on TFP-Standardized\relax }}{3}
 \contentsline {table}{\numberline {2}{\ignorespaces Impact of FDI on TFP\relax }}{3}
-\contentsline {table}{\numberline {3}{\ignorespaces Types of FDI\relax }}{3}
-\contentsline {table}{\numberline {4}{\ignorespaces Multinomial Logits\relax }}{3}
-\contentsline {table}{\numberline {5}{\ignorespaces Seperate Logits for FDI Type\relax }}{4}
+\contentsline {table}{\numberline {3}{\ignorespaces Frequency of FDI Types\relax }}{3}
+\contentsline {table}{\numberline {4}{\ignorespaces ATE by Type of FDI\relax }}{4}
