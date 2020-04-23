@@ -202,15 +202,34 @@ To further motivate the use of matching estimators to investigate the effect of 
 
 \section{Empirical Specification}
 
+-Overlap?? 
+
+In order to evaluate the causal effect of FDI on Total Factor Productivity (TFP) we estimate our preferred model described in equation (1) using nearest neighbour and nearest neighbour 5 and a caliper of 0.05. Further, we use  inverse probability (IPW) and augmented-inverse probability (AIPW) estimators.
+As unlogging employment leaves us better covariate balance we include unlogged employment as a control variable. Further, the inclusion of technology intensity as also exports predict the probability of receiving a treatment too well  [VISUALIZE?]. As propensity score matching requires that all included covariates affect outcome as also treatment variables, we exlude export as latter is likely to solely affect treatment but not our outcome variable. [ADD REFERENCE]. Also, we do not include port due to the same reasoning as before. 
+%--------------------------------EQUATION 1
+\begin{align*}
+TFP  =&  \beta_{0} + \beta_{1} FDI + \beta_{2} X_{i 2015} + \epsilon_{i}   
+\end{align*}
+where
+\begin{itemize}
+\item \textit{FDI} is a non-random treatment variable. It takes value 1 in case of treatment, 0 otherwise;
+\item  $X_{i 2015}$ describes control variables and consists of following pre-treatment covariates: Ownership, Technology Intensity, Research\&Development, logarithm of Wages, Total Factor Productivity, Employment and Debts
+\end{itemize}
+%------------------------------------------
+
+The main findings of this paper are displayed in table 6. It reports the average treatment effects (ATE) for TFP.  Independent of the estimator, we find highly significant coefficients showing that receiving FDI increases TFP of companies on average. Nonsurprisingly, the reported coefficients differ only slighlty in magnitude. This suggests that our model is not sensitive to different model estimations, which supports our chosen model specification.  Column (1) shows the results of a one-to-one propensity score matching with replacement. Receiving FDI leads for the average company to an increase in TFP of 0.13 standard deviations. Sligthly lower results are obtained from a propensity score matching with five nearest neighbors and a caliper of 0.05 as well as for the invers IPW and AIPW-estimators.
+Taking the covariate balances into consideration, we prefer the one-to-one propensity score matching as it gives us bettert covariate balance as compared to the alternative estimators \textit{see Appendix}. Following, we propbe the sensitivity of your findings in  more detail for one-to-one propensity schore matching. 
+
+%-------------------------------------TABLE 6
 \subsection{Effect of FDI on TFP}
 \begin{table}
  \centering
    \caption{ATE of FDI on TFP}
 \begin{tabular}{lcccc} \hline
- & NN1 & NN5\textsuperscript{a} & IPW & AIWP \\
+ & NN1 & NN5\textsuperscript{a} & IPW & AIPW \\
  & (1) & (2) & (3)  & (4) \\ \hline
  &  &  &  &    \\
-r1vs0.FDI2016 & 0.130*** & 0.114*** & 0.122***  & 0.122***   \\
+FDI2016 & 0.130*** & 0.114*** & 0.122***  & 0.122***   \\
  & (0.015) & (0.011) & (0.007) &   (0.007)  \\
 0.FDI2016 &  &  &  &    \\
 P0 Means & & & -0.068*** & -0.068***\\
@@ -227,6 +246,7 @@ P0 Means & & & -0.068*** & -0.068***\\
 	\item\textsuperscript{a} We use the Propensity Score Matching method with five nearest neihbors and replacement as well as a 0.05 caliper. 
 \end{tablenotes}
 \end{table}
+%------------------------------------------
 
 
 
