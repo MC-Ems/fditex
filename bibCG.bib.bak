@@ -42,12 +42,14 @@ publisher = {Blackwell Publishing Ltd}
   publisher={The University of Chicago Press}
 }
 
-@article{aitken99,
-Author = {Brian J. Aitken and Ann E. Harrison},
+@article{10.1257/aer.89.3.605,
+Author = {Aitken, Brian J. and Harrison, Ann E.},
 Title = {Do Domestic Firms Benefit from Direct Foreign Investment? Evidence from Venezuela},
 Journal = {American Economic Review},
 Volume = {89},
 Number = {3},
 Year = {1999},
-Pages = {605-618}
-}
+Month = {June},
+Pages = {605-618},
+DOI = {10.1257/aer.89.3.605},
+URL = {https://www.aeaweb.org/articles?id=10.1257/aer.89.3.605}}
