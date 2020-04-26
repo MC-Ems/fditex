@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.10)  25 APR 2020 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.10)  26 APR 2020 12:53
 entering extended mode
 **./FDI_project.tex
 (FDI_project.tex
@@ -686,19 +686,41 @@ Package pdftex.def Info: Graphics/emp15_outliers.png  used on input line 186.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3] (baltab_fdi.tex) [4] [5] [6 <./Graphics/emp15_outliers.png (PNG copy)>]
+[3]
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.198 	\input
+             {baltab_fdi}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.198 	\input
+             {baltab_fdi}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+(baltab_fdi.tex) [4] [5] [6 <./Graphics/emp15_outliers.png (PNG copy)>]
 [7] [8] [9]
-Overfull \hbox (8.48463pt too wide) in paragraph at lines 347--375
+Overfull \hbox (8.48463pt too wide) in paragraph at lines 348--376
  [] 
  []
 
 <Graphics/mlog_overl_ppb.png, id=63, 883.3pt x 588.1975pt>
 File: Graphics/mlog_overl_ppb.png Graphic file (type png)
 <use Graphics/mlog_overl_ppb.png>
-Package pdftex.def Info: Graphics/mlog_overl_ppb.png  used on input line 383.
+Package pdftex.def Info: Graphics/mlog_overl_ppb.png  used on input line 384.
 (pdftex.def)             Requested size: 470.00674pt x 312.9803pt.
 
-Overfull \hbox (51.75119pt too wide) in paragraph at lines 383--383
+Overfull \hbox (51.75119pt too wide) in paragraph at lines 384--384
  [][] 
  []
 
@@ -707,14 +729,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package natbib Warning: Citation `biddle1990sleep' on page 10 undefined on inpu
-t line 392.
+t line 393.
 
 
 Package natbib Warning: Citation `CaliendoHujerThomsen2008' on page 10 undefine
-d on input line 393.
+d on input line 394.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--394
+Underfull \hbox (badness 10000) in paragraph at lines 391--395
 
  []
 

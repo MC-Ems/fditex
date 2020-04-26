@@ -190,10 +190,11 @@ While there is no reason not to do so in the case of wages and debts, the covari
 
 To further motivate the use of matching estimators to investigate the effect of FDI on a firm's TFP, the differences in means between the firms that received FDI and the firms that did not are displayed in Table \ref{tab:meandiff1}. The t-tests show significant differences in all observable characteristics, meaning that there is in fact selection into treatment. 
 
-%-------------------------------------TABLE 5
+%-------------------------------------TABLE 4
 \begin{table}[hbtp!]
 	\centering
 	\caption{Difference in Pre-Treatment Covariate Means}
+ \textwidth
 	\input{baltab_fdi}
 	\label{tab:meandiff1}
 \end{table}
@@ -221,7 +222,7 @@ where
 The main findings of this paper are displayed in Table \ref{tab:mainresults}. It reports the average treatment effects (ATE) for TFP.  Independent of the estimator, we find highly significant coefficients showing that receiving FDI increases TFP of companies on average. Nonsurprisingly, the reported coefficients differ only slighlty in magnitude. This suggests that our model is not sensitive to different model estimations, which supports our chosen model specification.  Column (1) shows the results of a one-to-one propensity score matching with replacement. Receiving FDI leads for the average company to an increase in TFP of 0.13 standard deviations. Sligthly lower results are obtained from a propensity score matching with five nearest neighbors and a caliper of 0.05 as well as for the invers IPW and AIPW-estimators.
 Taking the covariate balances into consideration, we prefer the one-to-one propensity score matching as it gives us bettert covariate balance as compared to the alternative estimators \textit{see Appendix}. Following, we propbe the sensitivity of your findings in  more detail for one-to-one propensity schore matching. 
 
-%-------------------------------------TABLE 6
+%-------------------------------------TABLE 5
 \subsection{Effect of FDI on TFP}
 \begin{table}[h]
  	\centering
@@ -248,7 +249,7 @@ P0 Means 	& & & -0.068*** & -0.068***\\
 
 \begin{tablenotes}[flushleft]
       \footnotesize
-\item Standard errors in parentheses. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+\item \textit{Note}: Standard errors in parentheses. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
 \item Covariates include, unless otherwise specified: Ownership, Technology Intensity, Research\&Development, logarithm of wages, Total Factor Productivity, Employment and Debts. 
 \item All shown coefficients are normalized for better interpretation. 
 \item\textsuperscript{a} We use the Propensity Score Matching method with five nearest neihbors and replacement as well as a 0.05 caliper. 
@@ -265,7 +266,7 @@ P0 Means 	& & & -0.068*** & -0.068***\\
 Table \ref{tab:robust} reports several alternative model specifications that confirm the robustness of our main results. The positive and significant effect of foreign investment on total factor productivity persists. In column (1), we add interaction terms of the dummy variables with the continuous regressors to our set of covariates. The average treatment effect of FDI on productivity slightly increases by 0.027 standard deviations. The covariate balance does not improve with the inclusion of interaction terms, suggesting that interactions do not increase the quality of matching.\footnote{The same holds true when interacting only dummy variables, only continuous variables or all variables.} One possible source of bias are the outliers of employment. While most of the firms' number of employees is concentrated around a mean of 7,111, we are concerned about two observations with extreme values: one firm with over eight million employees, and another one that apparently hired more than 4 million people in 2015.\footnote{Given the limited information our dataset contains, we cannot be sure in which unit employment is measured. We therefore suppose that the common definition of employment being the number of hired employees holds.}  To check whether these outliers influence our main findings, we exclude the two extreme observations. The results reported in column (2) show no significant change in the average treatment effect. %Note% should do F-test for equality of coefficients?%
 In our main specification, we have further assumed that a nearby port does not influence total factor productivity. Column (3) confirms that this is indeed the case, as the results do not change with the inclusion of the dummy variable port in our set of covariates. 
 
-%-----------------------TABLE
+%-----------------------TABLE 6
 \begin{table}[h]
   \centering
    \caption{Robustness of Results\textsuperscript{a}}
@@ -295,7 +296,7 @@ Observations & 11,323 & 11,321 & 11,323 & 11,323 \\
 
 \begin{tablenotes}[flushleft]
      \footnotesize
-\item \textit{Note}:Standard errors in parentheses. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.    
+\item \textit{Note}: Standard errors in parentheses. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.    
      
 \item\textsuperscript{a}All specifications use the Propensity Score Matching method with one nearest neighbor and replacement. Covariates include, unless otherwise specified: Ownership, Technology Intensity, Research\&Development, logarithm of Wages, Total Factor Productivity, Employment and Debts. 
 
@@ -338,7 +339,7 @@ The Inverse Probability Weighting Model gives us somewhat bigger differences in 
 
 With the AIPW being a doubly robust estimators and rather small differences in the IPW estimator we take these results to suggest that all types of FDI have similar positive impacts on factor productivity. 
 
-%-----------------------------TABLE
+%-----------------------------TABLE 7
 \begin{table}[htbp]
 	\centering
 	\caption{ATE by Type of FDI}
@@ -377,7 +378,7 @@ Observations 	& 11,323  & 11,323 &  7,803  & 8,418 & 8,828  \\
 
 To account for the possibility that the choice of the FDI type does not satisfy the IIA assumption we further estimate separate logit models for the two estimator types. The results, reported in table 7, are very similar to those obtained from a multinomial specification, suggesting that the IIA assumption holds.  
 
-%-------------------FIGURE 
+%-------------------FIGURE 2
 \begin{figure}[h]\centering
 \caption{Propensity Score by Treatment Level}
 \includegraphics[height=11cm]{mlog_overl_ppb.png}\\[0.5cm] 
