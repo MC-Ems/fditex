@@ -145,7 +145,7 @@ Strategies for the selection of variables to be used in estimating the propensit
 
 
 \section{Data and Descriptive Analysis}
-Our analysis is based on observational firm-level data. The dataset comprises 11,323 firms, of which 4,460 received FDI in 2016. The FDI can be divided into three subcategories. Table \ref{tab:freq} shows the frequencies of each type of FDI in our sample. Among the recipients of FDI, most firms (1,965) received domestic market seeking FDI. 1,555 firms received technology intensive FDI and the remaining 640 firms received exports oriented FDI. The TFP outcome was measured in 2017. We standardize\footnote{Using Z-score standardization} the outcome variable to make its interpretation more intuitive.
+Our analysis is based on observational firm-level data. The dataset comprises 11,323 firms, of which 4,460 received FDI in 2016. The FDI can be divided into three subcategories. Table \ref{tab:freq} shows the frequencies of each type of FDI in our sample. Among the recipients of FDI, most firms (1,965) received domestic market seeking FDI. 1,555 firms received technology intensive FDI and the remaining 640 firms received exports oriented FDI. The TFP outcome was measured in 2017. We standardize \footnote{Using Z-score standardization} the outcome variable to make its interpretation more intuitive. % We standardize the outcome to a mean of 0 and a standard deviation of 1.
 
 %--------------------TABLE 1
 \begin{table}[h]
@@ -178,7 +178,9 @@ The summary statistics of the continuous variables wages, Total Factor Productiv
 \end{table}
 %------------------------------
 
-While there is no reason not to do so in the case of wages and debts, the covariate balance after estimating the propensity score when including the logged employment variable does not yield satisfying results [SEE SOMEWHERE???], which is why we prefer to include the untransformed employment variable in our estimation model. A visual analysis of the employment variable's distribution in our sample (see Figure \ref{fig:outliers}) shows that there is at least one extreme value which could potentially bias our results. In section [ADD SECTIONNUMBER] we therefore test the sensitivity of our findings to excluding observations with extremely high values and find no evidence of distortions caused by outliers in the employment variable. 
+While there is no reason not to do so in the case of wages and debts, the covariate balance after estimating the propensity score when including the logged employment variable does not yield satisfying results [SEE SOMEWHERE???], which is why we prefer to include the untransformed employment variable in our estimation model. %Unless otherwise specified we thus use logged versions of the continuous variables. 
+ A visual analysis of the employment variable's distribution in our sample (see Figure \ref{fig:outliers}) shows that there is at least one extreme value which could potentially bias our results. In section [ADD SECTIONNUMBER] we therefore test the sensitivity of our findings to excluding observations with extremely high values and find no evidence of distortions caused by outliers in the employment variable.
+ 
 
 %-------------------FIGURE 1
 \begin{figure}[h]\centering
@@ -188,7 +190,7 @@ While there is no reason not to do so in the case of wages and debts, the covari
 \end{figure} 
 %---------------------------
 
-To further motivate the use of matching estimators to investigate the effect of FDI on a firm's TFP, the differences in means between the firms that received FDI and the firms that did not are displayed in Table \ref{tab:meandiff1}. The t-tests show significant differences in all observable characteristics, meaning that there is in fact selection into treatment. 
+To further motivate the use of matching estimators in estimating the effect of FDI on a firm's TFP, the differences in means between the firms that received FDI and the firms that did not are displayed in Table \ref{tab:meandiff1}. The t-tests show significant differences in all observable characteristics, meaning that there is in fact selection into treatment.
 
 %-------------------------------------TABLE 4
 \begin{table}[hbtp!]
@@ -204,8 +206,11 @@ To further motivate the use of matching estimators to investigate the effect of 
 
 -Overlap?? 
 
-In order to evaluate the causal effect of FDI on Total Factor Productivity (TFP) we estimate our preferred model described in equation (1) using nearest neighbour and nearest neighbour 5 and a caliper of 0.05. Further, we use  inverse probability (IPW) and augmented-inverse probability (AIPW) estimators.
-As unlogging employment leaves us better covariate balance we include unlogged employment as a control variable. Further, the inclusion of technology intensity as also exports predict the probability of receiving a treatment too well  [VISUALIZE?]. As propensity score matching requires that all included covariates affect outcome as also treatment variables, we exlude export as latter is likely to solely affect treatment but not our outcome variable. [ADD REFERENCE]. Also, we do not include port due to the same reasoning as before. 
+In order to evaluate the causal effect of FDI on Total Factor Productivity (TFP) we estimate our main model described in equation (1) using nearest neighbour matching with one neighbour and with replacement. Second, we also estimate a nearest neighbour model with 5 neighbors with replacement and a caliper of 0.05. Further, we use  inverse probability weighting (IPW) and augmented-inverse probability weighting (AIPW) estimators. Since we have a large sample, the different estimators should all yield similar results.
+
+For the matching, the weighing  and regression adjustment models we use the same specification including the beforementioned categorical and continuous variables. We unlog employment to improve covariate balance. We do not include the export variable as a matching covariate, since together with technology it predicts treatment too well and nearly eliminates overlap. 
+As propensity score matching requires that all covariates which affect both outcome and likelihood of treatment, we can exlude export since it does not influence the outcome variable. As Girma et al (2004) show, productivity increases exports, not the other way around. We do not include the port variable for the same theoretical reason.
+ 
 
 %--------------------------------EQUATION 1
 \begin{align*}
@@ -217,6 +222,22 @@ where
 \item  $X_{i 2015}$ describes control variables and consists of following pre-treatment covariates: Ownership, Technology Intensity, Research\&Development, logarithm of Wages, Total Factor Productivity, Employment and Debts
 \end{itemize}
 %------------------------------------------
+
+Our matching model is thus a logit regression of TFP in 2017 on Ownership, Technology Intensity, Research\&Development, logarithm of Wages, TFP in 2015, Employment and Debts. This very good overlap and covariate balances (the latter discussed in more detail down below). Figure two shows proof of sufficient overlap for a matching analysis. 
+
+%-------------------FIGURE 2
+\begin{figure}[h]\centering
+	\caption{Overlap in Main Model}
+	\includegraphics[width=\textwidth]{overlap}
+  	\label{fig:overlap}
+\end{figure} 
+%---------------------------
+
+
+The main findings of this paper are displayed in Table \ref{tab:mainresults}. It reports the Average Treatment Effects (ATE) for TFP. Across estimators, we find large and highly significant coefficients showing that receiving FDI increases TFP of companies on average. Nonsurprisingly, the reported coefficients differ only slighlty in magnitude. This suggests that our model is not sensitive to different model estimations, which supports our chosen model specification.  Column (1) shows the results of a one-to-one propensity score matching with replacement. Receiving FDI leads for the average company to an increase in TFP of 0.13 standard deviations. Sligthly lower results are obtained from a propensity score matching with five nearest neighbors and a caliper of 0.05 as well as for the invers IPW and AIPW-estimators.
+
+
+
 
 The main findings of this paper are displayed in Table \ref{tab:mainresults}. It reports the average treatment effects (ATE) for TFP.  Independent of the estimator, we find highly significant coefficients showing that receiving FDI increases TFP of companies on average. Nonsurprisingly, the reported coefficients differ only slighlty in magnitude. This suggests that our model is not sensitive to different model estimations, which supports our chosen model specification.  Column (1) shows the results of a one-to-one propensity score matching with replacement. Receiving FDI leads for the average company to an increase in TFP of 0.13 standard deviations. Sligthly lower results are obtained from a propensity score matching with five nearest neighbors and a caliper of 0.05 as well as for the invers IPW and AIPW-estimators.
 Taking the covariate balances into consideration, we prefer the one-to-one propensity score matching as it gives us better covariate balance as compared to the alternative estimators \textit{see Appendix}. Following, we propbe the sensitivity of your findings in  more detail for one-to-one propensity schore matching. 
