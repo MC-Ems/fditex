@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.23)  27 APR 2020 13:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.23)  27 APR 2020 15:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -952,17 +952,17 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3] (./baltab_fdi.tex) [4] [5] [6 <./Graphics/emp15_outliers.png (PNG copy)>]
 [7] [8] [9]
-Overfull \hbox (8.48456pt too wide) in paragraph at lines 347--375
+Overfull \hbox (8.48456pt too wide) in paragraph at lines 348--376
  [] 
  []
 
 <Graphics/mlog_overl_ppb.png, id=64, 883.3pt x 588.1975pt>
 File: Graphics/mlog_overl_ppb.png Graphic file (type png)
 <use Graphics/mlog_overl_ppb.png>
-Package pdftex.def Info: Graphics/mlog_overl_ppb.png  used on input line 383.
+Package pdftex.def Info: Graphics/mlog_overl_ppb.png  used on input line 384.
 (pdftex.def)             Requested size: 470.00674pt x 312.9803pt.
 
-Overfull \hbox (51.75119pt too wide) in paragraph at lines 383--383
+Overfull \hbox (51.75119pt too wide) in paragraph at lines 384--384
  [][] 
  []
 
@@ -971,14 +971,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package natbib Warning: Citation `biddle1990sleep' on page 10 undefined on inpu
-t line 392.
+t line 393.
 
 
 Package natbib Warning: Citation `CaliendoHujerThomsen2008' on page 10 undefine
-d on input line 393.
+d on input line 394.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--394
+Underfull \hbox (badness 10000) in paragraph at lines 391--395
 
  []
 
@@ -1019,7 +1019,7 @@ texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texliv
 e/2018/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on FDI_project.pdf (16 pages, 1278710 bytes).
+Output written on FDI_project.pdf (16 pages, 1278706 bytes).
 PDF statistics:
  149 PDF objects out of 1000 (max. 8388607)
  104 compressed objects within 2 object streams
