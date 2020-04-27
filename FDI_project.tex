@@ -219,7 +219,8 @@ where
 %------------------------------------------
 
 The main findings of this paper are displayed in Table \ref{tab:mainresults}. It reports the average treatment effects (ATE) for TFP.  Independent of the estimator, we find highly significant coefficients showing that receiving FDI increases TFP of companies on average. Nonsurprisingly, the reported coefficients differ only slighlty in magnitude. This suggests that our model is not sensitive to different model estimations, which supports our chosen model specification.  Column (1) shows the results of a one-to-one propensity score matching with replacement. Receiving FDI leads for the average company to an increase in TFP of 0.13 standard deviations. Sligthly lower results are obtained from a propensity score matching with five nearest neighbors and a caliper of 0.05 as well as for the invers IPW and AIPW-estimators.
-Taking the covariate balances into consideration, we prefer the one-to-one propensity score matching as it gives us bettert covariate balance as compared to the alternative estimators \textit{see Appendix}. Following, we propbe the sensitivity of your findings in  more detail for one-to-one propensity schore matching. 
+Taking the covariate balances into consideration, we prefer the one-to-one propensity score matching as it gives us better covariate balance as compared to the alternative estimators \textit{see Appendix}. Following, we propbe the sensitivity of your findings in  more detail for one-to-one propensity schore matching. 
+
 
 %-------------------------------------TABLE 5
 \subsection{Effect of FDI on TFP}
@@ -235,11 +236,11 @@ Taking the covariate balances into consideration, we prefer the one-to-one prope
  			& NN1 & NN5\textsuperscript{a} & IPW & AIPW \\
  			& (1) & (2) & (3)  & (4) \\ \hline
  			&  &  &  &    \\
-FDI2016 	& 0.130*** & 0.114*** & 0.122***  & 0.122***   \\
- 			& (0.015) & (0.011) & (0.007) &   (0.007)  \\
+FDI2016 	& 0.130*** & 0.114*** & 0.122***  & 0.292***   \\
+ 			& (0.015) & (0.011) & (0.007) &   (0.006)  \\
 0.FDI2016 	&  &  &  &    \\
-P0 Means 	& & & -0.068*** & -0.068***\\
-			&  &  & (0.010)  &  (0.010) \\
+P0 Means 	& & & -0.068*** &  3.540*** \\
+			&  &  & (0.010)  &  (0.020) \\
 			&  &  &  &    \\
  Observations & 11,323 & 11,318 & 11,323 & 11,323 \\ 
  	\hline
