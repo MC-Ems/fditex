@@ -76,11 +76,11 @@
 			Professor Sourafel \textsc{Girma} 
 			\vfill\vfill 
 			\textit{Authors}\\
+			Emilie \textsc{Bechtold} (20214031)\\
 			Nelly  \textsc{Lehn} (20214338)\\
 			Yonesse \textsc{Paris} (20115536)\\
-			Thea  \textsc{Zoellner} (20216019)\\
 			Georg  \textsc{Schneider} (20214032)\\
-			Emilie \textsc{Bechtold} (20214031)
+			Thea  \textsc{Zoellner} (20216019)
 		\end{flushleft}
 	\vfill 
 	
@@ -172,7 +172,7 @@ The summary statistics of the continuous variables wages, Total Factor Productiv
 %-----------------------TABLE 3
 \begin{table}[h]
 	\centering
-	\caption{Summary Statistics of Continuous Covaraites} 
+	\caption{Summary Statistics of Continuous Covariates} 
 	\input{cont_summ}
 	\label{tab:cont}
 \end{table}
@@ -203,10 +203,10 @@ To further motivate the use of matching estimators in estimating the effect of F
 
 \section{Empirical Specification}
 
-In order to evaluate the causal effect of FDI on Total Factor Productivity (TFP) we estimate our main model described in equation (1) using nearest neighbour matching with one neighbour and with replacement. Second, we also estimate a nearest neighbour model with 5 neighbors with replacement and a caliper of 0.05. Further, we use  inverse probability weighting (IPW) and augmented-inverse probability weighting (AIPW) estimators. Since we have a large sample, the different estimators should all yield essentially the same results.
+In order to evaluate the causal effect of FDI on Total Factor Productivity (TFP) we estimate our main model described in equation (1) using nearest-neighbour matching with one neighbour and with replacement. Second, we also estimate a nearest neighbour model with 5 neighbours with replacement and a caliper of 0.05. Further, we use  inverse probability weighting (IPW) and augmented-inverse probability weighting (AIPW) estimators. Since we have a large sample, the different estimators should all yield essentially the same results.
 
-For the matching,  weighting  and regression adjustment models we use the same specification including the beforementioned categorical and continuous variables. We unlog employment to improve covariate balance. We do not include the export variable as a matching covariate, since together with technology it predicts treatment too well and nearly eliminates overlap. 
-As propensity score matching requires that all covariates which affect both outcome and likelihood of treatment, we can exlude export since it does not influence the outcome variable. As Girma et al (2004) show, productivity increases exports, not the other way around. We do not include the port variable for the same theoretical reason.
+For the matching,  weighting  and regression adjustment models we use the same specification including the before-mentioned categorical and continuous variables. We unlog employment to improve covariate balance. We do not include the export variable as a matching covariate, since together with technology it predicts treatment too well and nearly eliminates overlap. 
+As propensity score matching requires that all covariates which affect both outcome and likelihood of treatment, we can exclude export since it does not influence the outcome variable. As Girma et al (2004) show, productivity increases exports, not the other way around. We do not include the port variable for the same theoretical reason.
  
 
 %--------------------------------EQUATION 1
@@ -230,14 +230,10 @@ Our matching model is thus a logit regression of TFP in 2017 on Ownership, Techn
 \end{figure} 
 %---------------------------
 
-
-The main findings of this paper are displayed in Table \ref{tab:mainresults}. It reports the Average Treatment Effects (ATE) for FDI on TFP. Across estimators, we find large and highly significant coefficients showing that receiving FDI increases TFP of companies on average. The reported coefficients differ only slighlty in magnitude, suggesting that the matching model is correctly specified.  Column (1) shows the results of a one-to-one propensity score matching with replacement. Receiving FDI  increases Factor Productivity by 13\% of a standard deviation for the average company. Sligthly lower results are obtained from a propensity score matching with five nearest neighbors and a caliper of 0.05 as well as for the invers IPW. The doubly robust AIPW-estimator is slighlty larger than the main model, but the estimators are within three percent of each other.
-
-Checking the covariate balances of our models, we prefer the one-to-one propensity score matching as it gives us the best covariate balance of all the estimators \textit{see Appendix}. In the next subsection, we probe the sensitivity of your findings in  more detail for one-to-one propensity score matching. 
-
+\subsection{Effect of FDI on TFP}
 
 %-------------------------------------TABLE 5
-\subsection{Effect of FDI on TFP}
+
 \begin{table}[h]
  	\centering
    	\caption{ATE of FDI on TFP}
@@ -263,22 +259,29 @@ PO Means 	& & & -0.068*** &  -0.057*** \\
 
 \begin{tablenotes}[flushleft]
       \footnotesize
-\item \textit{Note}: Standard errors in parentheses. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+\item \textit{Notes}: Standard errors in parentheses. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
 \item Covariates include, unless otherwise specified: Ownership, Technology Intensity, Research\&Development, logarithm of wages, Total Factor Productivity, Employment and Debts. 
-\item All shown coefficients are normalized for better interpretation. 
-\item\textsuperscript{a} We use the Propensity Score Matching method with five nearest neihbors and replacement as well as a 0.05 caliper. 
+\item All reported coefficients are normalized for better interpretation. %all coefficients or only dependent variable?
+\item\textsuperscript{a} We use the Propensity Score Matching method with five nearest neighbours and replacement as well as a 0.05 caliper. 
 \end{tablenotes}
 
 \end{threeparttable}
 \end{table}
 %------------------------------------------
 
+The main findings of this paper are displayed in Table \ref{tab:mainresults}. It reports the Average Treatment Effects (ATE) for FDI on TFP. Across estimators, we find large and highly significant coefficients showing that receiving FDI increases TFP of companies on average. The reported coefficients differ only slightly in magnitude, suggesting that the matching model is correctly specified.  Column (1) shows the results of a one-to-one propensity score matching with replacement. Receiving FDI  increases Factor Productivity by 13\% of a standard deviation for the average company. Slightly lower results are obtained from a propensity score matching with five nearest neighbors and a caliper of 0.05 as well as for the invers IPW. The doubly robust AIPW-estimator is slightly larger than the main model, but the estimators are within three percent of each other.
+
+Checking the covariate balances of our models, we prefer the one-to-one propensity score matching as it gives us the best covariate balance of all the estimators \textit{see Appendix}. %In the next subsection, we probe the sensitivity of your findings in more detail for one-to-one propensity score matching. 
 
 
 \subsection{Robustness of Results}
 
-Table \ref{tab:robust} reports several alternative model specifications that confirm the robustness of our main results. The positive and significant effect of foreign investment on total factor productivity persists. In column (1), we add interaction terms of the dummy variables with the continuous regressors to our set of covariates. This is widely practized to improve covariate balance (Caliendo et al. 2008).
-The Average Treatment Effect of FDI on productivity slightly increases but only by 2.7\% of a standard deviation. The covariate balance does not improve with the inclusion of interaction terms, suggesting that interactions do not increase the quality of matching in our case.\footnote{The same holds true when interacting only dummy variables, only continuous variables or all variables.} One possible source of bias could be the outlier in the employment variable. While most of the firms have employee numbers close to the mean of 7,111, we are concerned about two observations with extreme values: one firm with over eight million employees, and another one that apparently employed more than 4 million people in 2015.\footnote{Given the limited information our dataset contains, we cannot be sure in which unit employment is measured. We therefore suppose that the common definition of employment being the number of hired employees holds.}  To check whether these outliers influence our main findings, we exclude the two extreme observations. The results reported in column (2) show no significant change in the average treatment effect. %Note% should do F-test for equality of coefficients?%
+In order to test for the sensitivity of our main findings, we perform the nearest-neighbour matching with one neighbor and replacement for alternative model specifications. The results of these robustness checks are reported in Table \ref{tab:robust}. The positive and significant effect of FDI on TFP persists through all specifications, confirming our main results that foreign equity participation increases the productivity of firms. 
+
+In column (1), we add interaction terms of the dummy variables with the continuous regressors to our set of covariates. This is widely practiced to improve covariate balance \citep{Caliendo08}.
+However,  the covariate balance does not improve with the inclusion of interaction terms, suggesting that interactions do not increase the quality of matching in our case.\footnote{The same holds true when interacting only dummy variables, only continuous variables or all variables.} Our estimate of the Average Treatment Effect of FDI on productivity slightly increases by 0.022 standard deviations compared to the effect reported in Table \ref{tab:mainresults}. 
+
+Our results could further be biased by the outliers in the employment variable (see Figure \ref{fig:outliers}). While most of the firms' numbers of employees are concentrated around the mean of 7,111, we are concerned about two observations with extreme values: one firm with over eight million employees, and another one that apparently employed more than four million people in 2015.\footnote{Given the limited information our dataset contains, we cannot be sure in which unit employment is measured. We therefore suppose that the common definition of employment being the number of hired employees holds. Regardless of the measurement unit of employment, the outliers might be problematic.}  To check whether these outliers influence our main findings, we exclude the two extreme observations. The results reported in column (2) show no significant change in the average treatment effect. %Note% should do F-test for equality of coefficients?%
 In our main specification, we have further assumed that a port being within 500 km of the firm does not influence total factor productivity. Column (3) confirms that this is indeed the case, as the results do not change with the inclusion of the dummy variable port in our set of covariates. 
 
 %-----------------------TABLE 6
@@ -311,9 +314,9 @@ Observations & 11,323 & 11,321 & 11,323 & 11,323 \\
 
 \begin{tablenotes}[flushleft]
      \footnotesize
-\item \textit{Note}: Standard errors in parentheses. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.    
+\item \textit{Notes}: Standard errors in parentheses. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.    
      
-\item\textsuperscript{a}All specifications use the Propensity Score Matching method with one nearest neighbor and replacement. Covariates include, unless otherwise specified: Ownership, Technology Intensity, Research\&Development, logarithm of Wages, Total Factor Productivity, Employment and Debts. 
+\item \textsuperscript{a}All specifications use the Propensity Score Matching method with one nearest neighbor and replacement. Covariates include, unless otherwise specified: Ownership, Technology Intensity, Research\&Development, logarithm of Wages, Total Factor Productivity, Employment and Debts. 
 
 \item\textsuperscript{b} Interacting dummy variables (Ownership, Technology Intensity, Research \& Development) with continuous variables (Logarithm of wages, Total Factor Productivity, Employment and Debts).  
 
@@ -326,26 +329,64 @@ Observations & 11,323 & 11,321 & 11,323 & 11,323 \\
 \end{table}
 %--------------------------------------
 
-Finally, column (4) reports the average treatment effect on the treated (ATT) of the nearest neighbor matching with one neighbor and replacement. Because we assume that treatment is not exogenous, we might find stronger effects of treatment on the treated. This would be the case if those firms receiving treatment are also the ones benefiting more from it. However, our estimate in column (4) reports an ATT that is very similar to the average treatment effect for the hypothetical case that all firms had received FDI. %This suggests that the propensity score matching performed very well in randomizing treatment and control groups. ALT: This suggests that although there was selection into treatment the effect size would be very similar in the absense of such selection. 
-
-%maybe in conclusion/ limits of paper
-One shortcoming of our analysis is the missing capability of explaining the mechanisms behind the observed treatment effects. We do not distinguish between within-firm effects and spillover effects from firms receiving FDI on other firms. That is, the literature on spillover effects typically suggests spillovers within sectors rather than across sectors (SOURCE) and higher spillover effects on nearby firms or firms that are trading factor inputs with foreign-owned companies (SOURCE). Due to the limited information on a firm's sector and location, we are unable to measure spillover effects. 
+Finally, column (4) reports the average treatment effect on the treated (ATT) of the nearest neighbor matching with one neighbor and replacement. Because we assume that treatment is not exogenous, we might find stronger effects of treatment on the treated. This would be the case if those firms receiving treatment are also the ones benefiting more from it. However, our estimate in column (4) reports an ATT that is very similar to the average treatment effect for the hypothetical case that all firms had received FDI. %This suggests that the propensity score matching performed very well in randomizing treatment and control groups. ALT: This suggests that although there was selection into treatment the effect size would be very similar in the absence of such selection. 
 
 
 
+%-----------------------TABLE 7
+\begin{table}[h]
+  \centering
+   \caption{ATE by Technology Intensity of Industry}
+   \label{tab:TECH}
+\begin{threeparttable}
+ 
+\begin{tabular}{lcccc}
+ \hline
+ \hline
+ & & Medium & Medium &  \\ 
+ & Low-Tech & Low-Tech & High-Tech & High-Tech \\ 
+ & Industry & Industry & Industry & Industry \\ 
+ & (1) & (2) & (3) & (4) \\
+ \hline
+ &  &  &  &  \\
+FDI2016 & 0.160*** & 0.086*** & 0.172*** & 0.180*** \\
+	      & (0.020) & (0.028) & (0.019) & (0.054) \\
+	      &  &  &  &  \\
+ Observations & 4,194 & 1,685 & 3,539 & 1,905 \\ 
+	\hline
+	\hline
+\end{tabular}
+
+\begin{tablenotes}[flushleft]
+     \footnotesize
+\item \textit{Notes}: Standard errors in parentheses. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.    
+\end{tablenotes}
+
+\end{threeparttable}
+\end{table}
+%--------------------------------------
+
+
+Notes to Table:
+\begin{itemize}
+\item Effects differ by TECH intensity
+\item Higher Standard Errors
+\item Suggests higher effects for all industries but Medium Low-tech 
+\item Weighted mean of ATEs: 0.15750992
+\end{itemize}
 
 \section{Analysis by Type}
 
 
-To further test the robustness of our results  we continue our analysis by looking at potential heterogeneity of the treatment effect across types of FDI. Recall the three types of FDI from table 1 as Exports oriented, Technology intensive and Domestic market seeking, with the the latter being most common and the first being least common.
+To further test the robustness of our results, we continue our analysis by looking at potential heterogeneity of the treatment effect across types of FDI. Recall the three types of FDI from table 1 as Exports oriented, Technology intensive and Domestic market seeking, with the the latter being most common and the first being least common.
 We test the possibility that one specific type of Investment single handedly drives our previous results.  It is possible, that for example only exports-oriented increased factor productivity while the other two types had little or no impact. 
 
 We estimate an augmented IPW model with multi-valued treatment effects. The matching covariates are the same as in the previous model and the regression adjustment specification is the same as that for propensity score estimation. The covariate balance is good, but the variance ratio of employment (unlogged) is a borderline case. \footnote{Unfortunately an AIPW model with any interactions did not converge, so it was impossible to try and improve the balance this way.}
 
-Second, we estimate an IPW model to check if it yields similar estimates without regression adjustment. The covariate balance in this model is practially the same. Finally, we estimate a set of AIPW models where we restrict the sample to one type of treatment each. This allows for the IIA assumption to be relaxed which is required for the Mulitnomial Logit models. The seperate models have worse covariate balance than the first two but are borderline acceptable. The overlap assumption is satisfied for all treatment levels as can be seen in graph \ref{fig:psbytype}. 
+Second, we estimate an IPW model to check if it yields similar estimates without regression adjustment. The covariate balance in this model is practically the same. Finally, we estimate a set of AIPW models where we restrict the sample to one type of treatment each. This allows for the IIA assumption to be relaxed which is required for the Mulitnomial Logit models. The separate models have worse covariate balance than the first two but are borderline acceptable. The overlap assumption is satisfied for all treatment levels as can be seen in graph \ref{fig:psbytype}. 
 
 
-In Table \ref{tab:bytype} the results from the typewise analysis are shown. In the AIPW Multinomial specification the ATE of different types of FDI are within half a percent of of each other. This suggests, that all types of FDI increase factor productivtiy by essentially the same margin. The estimated effect size is close to the one estimated for FDI in table 2. In the IPW specification the differences slightly larger but still within 5\% of a standard deviation of each other.  The seperate logit models also yield essentially the same effect sizes as the multinomial specification. Since the AIPW estimator is doubly robust (assuming correctly specified regression adjustment models) models (1) and (3) provide us with strong evidence of homogenous effects.
+In Table \ref{tab:bytype} the results from the type-wise analysis are shown. In the AIPW Multinomial specification the ATE of different types of FDI are within half a percent of of each other. This suggests, that all types of FDI increase factor productivity by essentially the same margin. The estimated effect size is close to the one estimated for FDI in table 2. In the IPW specification the differences slightly larger but still within 5\% of a standard deviation of each other.  The separate logit models also yield essentially the same effect sizes as the multinomial specification. Since the AIPW estimator is doubly robust (assuming correctly specified regression adjustment models) models (1) and (3) provide us with strong evidence of homogenous effects.
 
 
 %-------------------FIGURE 2
@@ -358,7 +399,7 @@ In Table \ref{tab:bytype} the results from the typewise analysis are shown. In t
 
 
 
-%-----------------------------TABLE 7
+%-----------------------------TABLE 8
 \begin{table}[htbp]
 	\centering
 	\caption{ATE by Type of FDI}
@@ -388,7 +429,7 @@ Observations 	& 11,323  & 11,323 &  7,803  & 8,418 & 8,828  \\
 
 \begin{tablenotes}[flushleft]
 	\footnotesize
-\item \textit{Note}: Robust standard errors in parentheses. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+\item \textit{Notes}: Robust standard errors in parentheses. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
 \end{tablenotes}
 
 \end{threeparttable}
@@ -412,6 +453,8 @@ Thoughts on what we could write for discussion/limits of our study:
 \item Do not have sector-specific data $\rightarrow$ TECH variable has only 4 categories; e.g. in order to measure spillover effects from other firms in sector this would be necessary (i.e. if a foreign firm is more innovative)
 \end{enumerate}
 
+%maybe in conclusion/ limits of paper
+One shortcoming of our analysis is the missing capability to explain the mechanisms behind the observed treatment effects. We do not distinguish between within-firm effects and spillover effects from firms receiving FDI to other firms. That is, the literature on spillover effects typically suggests spillovers within sectors rather than across sectors (SOURCE) and higher spillover effects on nearby firms or firms that are trading factor inputs with foreign-owned companies (SOURCE). Due to the limited information on a firm's sector and location, we are unable to measure spillover effects. 
 
 \newpage
 
