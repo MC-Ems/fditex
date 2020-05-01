@@ -203,10 +203,11 @@ To further motivate the use of matching estimators in estimating the effect of F
 
 \section{Empirical Specification}
 
-In order to evaluate the causal effect of FDI on Total Factor Productivity (TFP) we estimate our main model described in equation (1) using nearest neighbour matching with one neighbour and with replacement. Second, we also estimate a nearest neighbour model with 5 neighbors with replacement and a caliper of 0.05. Further, we use  inverse probability weighting (IPW) and augmented-inverse probability weighting (AIPW) estimators. Since we have a large sample, the different estimators should all yield essentially the same results.
+In order to evaluate the causal effect of FDI on Total Factor Productivity (TFP) we estimate our main model described in equation (1) using nearest neighbour matching with one neighbour and with replacement. Second, we also estimate a nearest neighbour model with 5 neighbors with replacement and a caliper of 0.05. Further, we use inverse probability weighting (IPW) and augmented-inverse probability weighting (AIPW) estimators. Since we have a large sample, the different estimators should all yield essentially the same results.
 
-For the matching,  weighting  and regression adjustment models we use the same specification including the beforementioned categorical and continuous variables. We unlog employment to improve covariate balance. We do not include the export variable as a matching covariate, since together with technology it predicts treatment too well and nearly eliminates overlap. 
+For the matching, weighting  and regression adjustment models we use the same specification including the beforementioned categorical and continuous variables. We unlog employment to improve covariate balance. We do not include the export variable as a matching covariate, since together with technology it predicts treatment too well and nearly eliminates overlap. 
 As propensity score matching requires that all covariates which affect both outcome and likelihood of treatment, we can exlude export since it does not influence the outcome variable. As Girma et al (2004) show, productivity increases exports, not the other way around. We do not include the port variable for the same theoretical reason.
+We assume that selection occurs only on our specified observables, thus assuming that the conditional independece assumption holds. 
  
 
 %--------------------------------EQUATION 1
