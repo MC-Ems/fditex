@@ -7,7 +7,9 @@
 \contentsline {section}{\numberline {4}Empirical Specification}{4}%
 \contentsline {subsection}{\numberline {4.1}Effect of FDI on TFP}{6}%
 \contentsline {subsection}{\numberline {4.2}Robustness of Results}{7}%
-\contentsline {subsection}{\numberline {4.3}Does the effect of FDI depend on technology intensity?}{9}%
-\contentsline {section}{\numberline {5}Analysis by Type}{11}%
+\contentsline {subsection}{\numberline {4.3}Treatment Effects by Technology Intensity}{9}%
+\contentsline {section}{\numberline {5}Analysis by Type of FDI}{11}%
 \contentsline {section}{\numberline {6}Discussion/Conclusion}{11}%
 \contentsline {section}{References}{14}%
+\contentsline {section}{\numberline {A}Appendix}{iii}%
+\contentsline {subsection}{\numberline {A.1}Treatment by Technology Intensity}{iii}%
