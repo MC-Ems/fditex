@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.23)  28 APR 2020 08:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.23)  1 MAY 2020 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -958,7 +958,7 @@ Overfull \vbox (19.53175pt too high) has occurred while \output is active []
 <Graphics/overlap.png, id=47, 883.3pt x 588.1975pt>
 File: Graphics/overlap.png Graphic file (type png)
 <use Graphics/overlap.png>
-Package pdftex.def Info: Graphics/overlap.png  used on input line 228.
+Package pdftex.def Info: Graphics/overlap.png  used on input line 229.
 (pdftex.def)             Requested size: 418.25555pt x 278.51715pt.
  [6 <./Graphics/overlap.png (PNG copy)>] [7]
 
@@ -968,10 +968,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Graphics/mlog_overl_ppb.png, id=65, 883.3pt x 588.1975pt>
 File: Graphics/mlog_overl_ppb.png Graphic file (type png)
 <use Graphics/mlog_overl_ppb.png>
-Package pdftex.def Info: Graphics/mlog_overl_ppb.png  used on input line 354.
+Package pdftex.def Info: Graphics/mlog_overl_ppb.png  used on input line 355.
 (pdftex.def)             Requested size: 470.00674pt x 312.9803pt.
 
-Overfull \hbox (51.75119pt too wide) in paragraph at lines 354--354
+Overfull \hbox (51.75119pt too wide) in paragraph at lines 355--355
  [][] 
  []
 
@@ -979,20 +979,20 @@ Overfull \hbox (51.75119pt too wide) in paragraph at lines 354--354
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (8.48456pt too wide) in paragraph at lines 367--395
+Overfull \hbox (8.48456pt too wide) in paragraph at lines 368--396
  [] 
  []
 
 
 Package natbib Warning: Citation `biddle1990sleep' on page 10 undefined on inpu
-t line 402.
+t line 403.
 
 
 Package natbib Warning: Citation `CaliendoHujerThomsen2008' on page 10 undefine
-d on input line 403.
+d on input line 404.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--404
+Underfull \hbox (badness 10000) in paragraph at lines 401--405
 
  []
 
@@ -1005,7 +1005,7 @@ Package natbib Warning: There were undefined citations.
 Here is how much of TeX's memory you used:
  19729 strings out of 492649
  395443 string characters out of 6129621
- 532183 words of memory out of 5000000
+ 532194 words of memory out of 5000000
  23349 multiletter control sequences out of 15000+600000
  553472 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1033,7 +1033,7 @@ texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texliv
 e/2018/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on FDI_project.pdf (16 pages, 1331942 bytes).
+Output written on FDI_project.pdf (16 pages, 1332058 bytes).
 PDF statistics:
  150 PDF objects out of 1000 (max. 8388607)
  104 compressed objects within 2 object streams
