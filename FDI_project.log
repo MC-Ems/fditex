@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.4.8)  1 MAY 2020 22:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.4.8)  2 MAY 2020 11:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -829,7 +829,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 139.
  [1]
 (./fditype_freq.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
@@ -840,7 +840,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Graphics/emp15_outliers.png, id=35, 693.59125pt x 461.725pt>
 File: Graphics/emp15_outliers.png Graphic file (type png)
 <use Graphics/emp15_outliers.png>
-Package pdftex.def Info: Graphics/emp15_outliers.png  used on input line 189.
+Package pdftex.def Info: Graphics/emp15_outliers.png  used on input line 190.
 (pdftex.def)             Requested size: 418.25555pt x 278.43916pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -849,7 +849,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Graphics/overlap.png, id=51, 883.3pt x 588.1975pt>
 File: Graphics/overlap.png Graphic file (type png)
 <use Graphics/overlap.png>
-Package pdftex.def Info: Graphics/overlap.png  used on input line 231.
+Package pdftex.def Info: Graphics/overlap.png  used on input line 232.
 (pdftex.def)             Requested size: 418.25555pt x 278.51715pt.
 
 
@@ -863,10 +863,10 @@ copy)>] [8] [9] [10]
 <Graphics/mlog_overl_ppb.png, id=69, 883.3pt x 588.1975pt>
 File: Graphics/mlog_overl_ppb.png Graphic file (type png)
 <use Graphics/mlog_overl_ppb.png>
-Package pdftex.def Info: Graphics/mlog_overl_ppb.png  used on input line 392.
+Package pdftex.def Info: Graphics/mlog_overl_ppb.png  used on input line 394.
 (pdftex.def)             Requested size: 470.00674pt x 312.9803pt.
 
-Overfull \hbox (51.75119pt too wide) in paragraph at lines 392--392
+Overfull \hbox (51.75119pt too wide) in paragraph at lines 394--394
  [][] 
  []
 
@@ -874,14 +874,14 @@ Overfull \hbox (51.75119pt too wide) in paragraph at lines 392--392
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (8.48463pt too wide) in paragraph at lines 405--429
+Overfull \hbox (8.48463pt too wide) in paragraph at lines 407--431
  [] 
  []
 
 [11]
 
 Package natbib Warning: Citation `aitken99' on page 12 undefined on input line 
-447.
+449.
 
 [12 <./Graphics/mlog_overl_ppb.png (PNG copy)>] [13] (./FDI_project.bbl)
 [14]
@@ -920,7 +920,7 @@ texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/te
 xlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texl
 ive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texliv
 e/2019/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on FDI_project.pdf (18 pages, 1343115 bytes).
+Output written on FDI_project.pdf (18 pages, 1343081 bytes).
 PDF statistics:
  156 PDF objects out of 1000 (max. 8388607)
  108 compressed objects within 2 object streams

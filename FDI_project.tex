@@ -148,6 +148,7 @@ Strategies for the selection of variables to be used in estimating the propensit
 
 \section{Data and Descriptive Analysis}
 Our analysis is based on observational firm-level data. The dataset comprises 11,323 firms, of which 4,460 received FDI in 2016. The FDI can be divided into three subcategories. Table \ref{tab:freq} shows the frequencies of each type of FDI in our sample. Among the recipients of FDI, most firms (1,965) received domestic market seeking FDI. 1,555 firms received technology intensive FDI and the remaining 640 firms received exports oriented FDI. The TFP outcome was measured in 2017. We standardize \footnote{Using Z-score standardization.} the outcome variable to make its interpretation more intuitive. % We standardize the outcome to a mean of 0 and a standard deviation of 1.
+%first time writing FDI in document: 'foreign direct investment (FDI)'
 
 %--------------------TABLE 1
 \begin{table}[h]
@@ -209,8 +210,8 @@ To further motivate the use of matching estimators in estimating the effect of F
 In order to evaluate the causal effect of FDI on Total Factor Productivity (TFP) we estimate our main model described in equation (1) using nearest-neighbour matching with one neighbour and with replacement. Second, we also estimate a nearest neighbour model with 5 neighbours with replacement and a caliper of 0.05. Further, we use  inverse probability weighting (IPW) and augmented-inverse probability weighting (AIPW) estimators. Since we have a large sample, the different estimators should all yield essentially the same results.
 %Note: Second but no 'first'
 For the matching,  weighting  and regression adjustment models we use the same specification including the before-mentioned categorical and continuous variables. We unlog employment to improve covariate balance. We do not include the export variable as a matching covariate, since together with technology it predicts treatment too well and nearly eliminates overlap. 
-As propensity score matching requires that all covariates which affect both outcome and likelihood of treatment, we can exclude export since it does not influence the outcome variable. As Girma et al (2004) show, productivity increases exports, not the other way around. We do not include the port variable for the same theoretical reason.
- 
+Propensity score matching requires that all variables which affect both outcome and likelihood of treatment are included as covariates. As Girma et al. (2004) show, productivity increases exports, not the other way around. %ALT: but the level of exports has no effect on productivity. Thus, we can exclude it.
+We do not include the port variable for the same theoretical reason. 
 
 %--------------------------------EQUATION 1
 \begin{align*}
@@ -273,7 +274,8 @@ PO Means 	& & & -0.068*** &  -0.057*** \\
 \end{table}
 %------------------------------------------
 
-The main findings of this paper are displayed in Table \ref{tab:mainresults}. It reports the Average Treatment Effects (ATE) for FDI on TFP. Across estimators, we find large and highly significant coefficients showing that receiving FDI increases TFP of companies on average. The reported coefficients differ only slightly in magnitude, suggesting that the matching model is correctly specified.  Column (1) shows the results of a one-to-one propensity score matching with replacement. Receiving FDI  increases Factor Productivity by 13\% of a standard deviation for the average company. Slightly lower results are obtained from a propensity score matching with five nearest neighbors and a caliper of 0.05 as well as for the invers IPW. The doubly robust AIPW-estimator is slightly larger than the main model, but the estimators are within three percent of each other.
+The main findings of this paper are displayed in Table \ref{tab:mainresults}. It reports the Average Treatment Effects (ATE) for FDI on TFP. Across estimators, we find large and highly significant coefficients showing that receiving FDI increases TFP of companies on average. The reported coefficients differ only slightly in magnitude, suggesting that the matching model is correctly specified. 
+Column (1) shows the results of a one-to-one propensity score matching with replacement. Receiving FDI  increases factor productivity by 13\% of a standard deviation for the average company. Slightly lower results are obtained from a propensity score matching with five nearest neighbors and a caliper of 0.05 as well as for the inverse IPW. The doubly robust AIPW-estimator is slightly larger than the main model, but the estimators are within three percent of each other.
 
 Checking the covariate balances of our models, we prefer the one-to-one propensity score matching as it gives us the best covariate balance of all the estimators \textit{see Appendix}. %In the next subsection, we probe the sensitivity of your findings in more detail for one-to-one propensity score matching. 
 
@@ -376,11 +378,11 @@ FDI2016 & 0.160*** & 0.086*** & 0.172*** & 0.180*** \\
 
 
 To further test the robustness of our results, we continue our analysis by looking at potential heterogeneity of the treatment effect across types of FDI. Recall the three types of FDI from table 1 as Exports oriented, Technology intensive and Domestic market seeking, with the the latter being most common and the first being least common.
-We test the possibility that one specific type of Investment single handedly drives our previous results.  It is possible, that for example only exports-oriented increased factor productivity while the other two types had little or no impact. 
+We test the possibility that one specific type of investment single handedly drives our previous results.  It is possible, that for example only exports-oriented increases factor productivity while the other two types have little or no impact. 
 
 We estimate an augmented IPW model with multi-valued treatment effects. The matching covariates are the same as in the previous model and the regression adjustment specification is the same as that for propensity score estimation. The covariate balance is good, but the variance ratio of employment (unlogged) is a borderline case. \footnote{Unfortunately an AIPW model with any interactions did not converge, so it was impossible to try and improve the balance this way.}%footnote sounds a bit like we failed in our analysis
 
-Second, we estimate an IPW model to check if it yields similar estimates without regression adjustment. The covariate balance in this model is practically the same. Finally, we estimate a set of AIPW models where we restrict the sample to one type of treatment each. This allows for the IIA assumption to be relaxed which is required for the mulitnominal logit models. The separate models have worse covariate balance than the first two but are borderline acceptable. The overlap assumption is satisfied for all treatment levels as can be seen in graph \ref{fig:psbytype}. 
+We further estimate an IPW model to check if it yields similar estimates without regression adjustment. The covariate balance in this model is practically the same. Finally, we specify a set of AIPW models where we restrict the sample to one type of treatment each. This allows for the IIA assumption to be relaxed which is required for the mulitnominal logit models. The separate models have worse covariate balance than the first two but are borderline acceptable. The overlap assumption is satisfied for all treatment levels as can be seen in graph \ref{fig:psbytype}. 
 
 
 In Table \ref{tab:bytype} the results from the type-wise analysis are shown. In the AIPW Multinomial specification the ATE of different types of FDI are within half a percent of of each other. This suggests, that all types of FDI increase factor productivity by essentially the same margin. The estimated effect size is close to the one estimated for FDI in table 2. In the IPW specification the differences slightly larger but still within 5\% of a standard deviation of each other.  The separate logit models also yield essentially the same effect sizes as the multinomial specification. Since the AIPW estimator is doubly robust (assuming correctly specified regression adjustment models) models (1) and (3) provide us with strong evidence of homogenous effects.
