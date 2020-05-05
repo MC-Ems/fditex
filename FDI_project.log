@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.17)  5 MAY 2020 14:44
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.23)  5 MAY 2020 13:56
->>>>>>> f9f8fc35e0d8da7238329cfced1835b4f7f355dd
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.17)  5 MAY 2020 19:06
 entering extended mode
 **./FDI_project.tex
 (FDI_project.tex
@@ -938,6 +934,29 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@loff=\dimen168
 \@vwid@roff=\dimen169
 ))
+("C:\Program Files\miktex 2.9v2\tex\latex\caption\subcaption.sty"
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+("C:\Program Files\miktex 2.9v2\tex\latex\caption\caption.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:\Program Files\miktex 2.9v2\tex\latex\caption\caption3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen170
+\captionmargin@=\dimen171
+\captionwidth=\dimen172
+\caption@tempdima=\dimen173
+\caption@indent=\dimen174
+\caption@parindent=\dimen175
+\caption@hangindent=\dimen176
+)
+Package caption Info: KOMA-Script document class.
+\c@ContinuedFloat=\count276
+)
+\c@subfigure=\count277
+\c@subtable=\count278
+)
 ("C:\Program Files\miktex 2.9v2\tex\latex\oberdiek\pdflscape.sty"
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
@@ -954,40 +973,23 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ))
 ("C:\Program Files\miktex 2.9v2\tex\latex\booktabs\booktabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen170
-\lightrulewidth=\dimen171
-\cmidrulewidth=\dimen172
-\belowrulesep=\dimen173
-\belowbottomsep=\dimen174
-\aboverulesep=\dimen175
-\abovetopsep=\dimen176
-\cmidrulesep=\dimen177
-\cmidrulekern=\dimen178
-\defaultaddspace=\dimen179
-\@cmidla=\count276
-\@cmidlb=\count277
-\@aboverulesep=\dimen180
-\@belowrulesep=\dimen181
-\@thisruleclass=\count278
-\@lastruleclass=\count279
-\@thisrulewidth=\dimen182
-)
-("C:\Program Files\miktex 2.9v2\tex\latex\caption\caption.sty"
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
-
-("C:\Program Files\miktex 2.9v2\tex\latex\caption\caption3.sty"
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen183
-\captionmargin@=\dimen184
-\captionwidth=\dimen185
-\caption@tempdima=\dimen186
-\caption@indent=\dimen187
-\caption@parindent=\dimen188
-\caption@hangindent=\dimen189
-)
-Package caption Info: KOMA-Script document class.
-\c@ContinuedFloat=\count280
+\heavyrulewidth=\dimen177
+\lightrulewidth=\dimen178
+\cmidrulewidth=\dimen179
+\belowrulesep=\dimen180
+\belowbottomsep=\dimen181
+\aboverulesep=\dimen182
+\abovetopsep=\dimen183
+\cmidrulesep=\dimen184
+\cmidrulekern=\dimen185
+\defaultaddspace=\dimen186
+\@cmidla=\count279
+\@cmidlb=\count280
+\@aboverulesep=\dimen187
+\@belowrulesep=\dimen188
+\@thisruleclass=\count281
+\@lastruleclass=\count282
+\@thisrulewidth=\dimen189
 )
 ("C:\Program Files\miktex 2.9v2\tex\latex\threeparttable\threeparttable.sty"
 Package: threeparttable 2003/06/13  v 3.0
@@ -1009,16 +1011,16 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 ("C:\Program Files\miktex 2.9v2\tex\latex\etoolbox\etoolbox.sty"
 Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count281
+\etb@tempcnta=\count283
 )
 ("C:\Program Files\miktex 2.9v2\tex\latex\tools\shellesc.sty"
 Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 69.
 )
 \csv@file=\read2
-\c@csvinputline=\count282
-\c@csvrow=\count283
-\c@csvcol=\count284
+\c@csvinputline=\count284
+\c@csvrow=\count285
+\c@csvcol=\count286
 \csv@out=\write3
 )
 ("C:\Program Files\miktex 2.9v2\tex\latex\import\import.sty"
@@ -1029,22 +1031,22 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip70
 \bibsep=\skip71
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count285
+\c@NAT@ctr=\count287
 ) (FDI_project.aux)
 \openout1 = `FDI_project.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 ("C:\Program Files\miktex 2.9v2\tex\latex\base\ts1enc.dfu"
@@ -1128,16 +1130,16 @@ File: siunitx-abbreviations.cfg 2017/08/02 v2.7j siunitx: Abbreviated units
 )
 ("C:\Program Files\miktex 2.9v2\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count286
+\scratchcounter=\count288
 \scratchdimen=\dimen190
 \scratchbox=\box56
-\nofMPsegments=\count287
-\nofMParguments=\count288
+\nofMPsegments=\count289
+\nofMParguments=\count290
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count289
+\MPscratchCnt=\count291
 \MPscratchDim=\dimen191
-\MPnumerator=\count290
-\makeMPintoPDFobject=\count291
+\MPnumerator=\count292
+\makeMPintoPDFobject=\count293
 \everyMPtoPDFconversion=\toks29
 ) ("C:\Program Files\miktex 2.9v2\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1190,53 +1192,36 @@ G,.JBIG2,.JB2,.eps]
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<<<<<<< HEAD
-\c__siunitx_mathsf_int=\count292
-LaTeX Font Info:    Try loading font information for U+msa on input line 49.
-=======
-LaTeX Font Info:    Try loading font information for U+msa on input line 50.
->>>>>>> f9f8fc35e0d8da7238329cfced1835b4f7f355dd
+\c__siunitx_mathsf_int=\count294
+LaTeX Font Info:    Try loading font information for U+msa on input line 51.
 
 ("C:\Program Files\miktex 2.9v2\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 50.
+LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 
 ("C:\Program Files\miktex 2.9v2\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-\c__siunitx_mathtt_int=\count293
+\c__siunitx_mathtt_int=\count295
 <Graphics/UoN_Logo.jpg, id=1, 2114.90125pt x 782.925pt>
 File: Graphics/UoN_Logo.jpg Graphic file (type jpg)
 <use Graphics/UoN_Logo.jpg>
-<<<<<<< HEAD
-Package pdftex.def Info: Graphics/UoN_Logo.jpg  used on input line 56. on input
- line 56.
+Package pdftex.def Info: Graphics/UoN_Logo.jpg  used on input line 58. on input
+ line 58.
 Package pdftex.def Info: Requested size: 115.27112pt x 42.67912pt on input line
- 56.
-=======
-Package pdftex.def Info: Graphics/UoN_Logo.jpg  used on input line 57.
-(pdftex.def)             Requested size: 115.27112pt x 42.67912pt.
->>>>>>> f9f8fc35e0d8da7238329cfced1835b4f7f355dd
+ 58.
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
 [1
 
-<<<<<<< HEAD
 {C:/Users/schne/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Graphics/
 UoN_Logo.jpg>]
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 97.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 99.
  ("C:\Program Files\miktex 2.9v2\tex\latex\base\t1cmss.fd"
-=======
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Graph
-ics/UoN_Logo.jpg>]
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 98.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmss.fd
->>>>>>> f9f8fc35e0d8da7238329cfced1835b4f7f355dd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 (FDI_project.toc)
@@ -1247,185 +1232,108 @@ File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 \tf@lot=\write5
 \openout5 = `FDI_project.lot'.
 
- [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 140.
-
-
-("C:\Program Files\miktex 2.9v2\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
- [1]
-<<<<<<< HEAD
-(fditype_freq.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
-=======
-(./fditype_freq.tex)
+ [2] (fditype_freq.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 163--164
->>>>>>> f9f8fc35e0d8da7238329cfced1835b4f7f355dd
 
  []
 
-(cat_freq.tex) [2] (cont_summ.tex)
+(cat_freq.tex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Graphics/emp15_outliers.png, id=31, 693.59125pt x 461.725pt>
+[1] (cont_summ.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Graphics/emp15_outliers.png, id=27, 693.59125pt x 461.725pt>
 File: Graphics/emp15_outliers.png Graphic file (type png)
 <use Graphics/emp15_outliers.png>
-<<<<<<< HEAD
-Package pdftex.def Info: Graphics/emp15_outliers.png  used on input line 189. o
-n input line 189.
+Package pdftex.def Info: Graphics/emp15_outliers.png  used on input line 191. o
+n input line 191.
 Package pdftex.def Info: Requested size: 418.25555pt x 278.43916pt on input lin
-e 189.
+e 191.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3] (baltab_fdi.tex) [4] [5] [6 <./Graphics/emp15_outliers.png (PNG copy)>]
-<Graphics/graph.png, id=52, 987.69pt x 658.46pt>
+(baltab_fdi.tex) [2]
+Overfull \vbox (19.53175pt too high) has occurred while \output is active []
+
+
+[3] [4 <./Graphics/emp15_outliers.png (PNG copy)>]
+
+LaTeX Warning: Reference `fig:overlap' on page 5 undefined on input line 246.
+
+<Graphics/graph.png, id=40, 883.3pt x 588.1975pt>
 File: Graphics/graph.png Graphic file (type png)
 <use Graphics/graph.png>
-Package pdftex.def Info: Graphics/graph.png  used on input line 234. on input l
-ine 234.
-Package pdftex.def Info: Requested size: 418.25555pt x 278.83205pt on input lin
-e 234.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-=======
-Package pdftex.def Info: Graphics/emp15_outliers.png  used on input line 191.
-(pdftex.def)             Requested size: 418.25555pt x 278.43916pt.
+Package pdftex.def Info: Graphics/graph.png  used on input line 251. on input l
+ine 251.
+Package pdftex.def Info: Requested size: 418.25555pt x 278.51715pt on input lin
+e 251.
+[5 <./Graphics/graph.png (PNG copy)>] [6]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3] (./baltab_fdi.tex) [4] [5] [6 <./Graphics/emp15_outliers.png (PNG copy)>]
-<Graphics/overlap.png, id=53, 883.3pt x 588.1975pt>
-File: Graphics/overlap.png Graphic file (type png)
-<use Graphics/overlap.png>
-Package pdftex.def Info: Graphics/overlap.png  used on input line 236.
-(pdftex.def)             Requested size: 418.25555pt x 278.51715pt.
->>>>>>> f9f8fc35e0d8da7238329cfced1835b4f7f355dd
+[7] [8]
 
-[7 <./Graphics/graph.png (PNG copy)>] [8]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `fig:psbytype' on page 9 undefined on input line 405.
 
 [9]
+<Graphics/overlap_type.png, id=59, 883.3pt x 588.1975pt>
+File: Graphics/overlap_type.png Graphic file (type png)
+<use Graphics/overlap_type.png>
+Package pdftex.def Info: Graphics/overlap_type.png  used on input line 416. on 
+input line 416.
+Package pdftex.def Info: Requested size: 512.73218pt x 341.43306pt on input lin
+e 416.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[10] [11]
-<Graphics/mlog_overl_ppb.png, id=70, 978.65625pt x 652.4375pt>
-File: Graphics/mlog_overl_ppb.png Graphic file (type png)
-<use Graphics/mlog_overl_ppb.png>
-<<<<<<< HEAD
-Package pdftex.def Info: Graphics/mlog_overl_ppb.png  used on input line 398. o
-n input line 398.
-Package pdftex.def Info: Requested size: 469.48088pt x 312.9803pt on input line
- 398.
-
-Overfull \hbox (51.22533pt too wide) in paragraph at lines 398--398
-=======
-Package pdftex.def Info: Graphics/mlog_overl_ppb.png  used on input line 398.
-(pdftex.def)             Requested size: 470.00674pt x 312.9803pt.
-
-Overfull \hbox (51.75119pt too wide) in paragraph at lines 398--398
->>>>>>> f9f8fc35e0d8da7238329cfced1835b4f7f355dd
- [][] 
+Overfull \hbox (39.99274pt too wide) in paragraph at lines 415--418
+[]|  [] 
  []
 
 
-<<<<<<< HEAD
-Overfull \hbox (8.48456pt too wide) in paragraph at lines 411--436
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (8.48456pt too wide) in paragraph at lines 430--454
  [] 
  []
 
-[12 <./Graphics/mlog_overl_ppb.png (PNG copy)>]
+[10] [11 <./Graphics/overlap_type.png (PNG copy)>] [12] (FDI_project.bbl)
+[13] [3] (FDI_project.aux)
 
-Package natbib Warning: Citation `aitken99' on page 13 undefined on input line 
-454.
-
-[13] (FDI_project.bbl) [14]
-
-Package natbib Warning: There were undefined citations.
-
-[3] (FDI_project.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 19602 strings out of 493308
- 388093 string characters out of 3137899
- 507091 words of memory out of 3000000
- 22870 multiletter control sequences out of 15000+200000
+ 19647 strings out of 493308
+ 388841 string characters out of 3137899
+ 509510 words of memory out of 3000000
+ 22915 multiletter control sequences out of 15000+200000
  553472 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,13n,100p,10364b,583s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 65i,13n,106p,10364b,581s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/miktex 2.9v2/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/P
-rogram Files/miktex 2.9v2/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program
- Files/miktex 2.9v2/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/
-miktex 2.9v2/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/miktex 
-2.9v2/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/miktex 2.9v2/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/miktex 2.9v2/fonts/t
-ype1/public/cm-super/sfbx1095.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/pu
-blic/cm-super/sfbx2074.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm
--super/sfcc1200.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/
-sfcc1440.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfcc172
-8.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfrm0600.pfb><
-C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Prog
-ram Files/miktex 2.9v2/fonts/type1/public/cm-super/sfrm0900.pfb><C:/Program Fil
-es/miktex 2.9v2/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Program Files/mikt
-ex 2.9v2/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/miktex 2.9v
-2/fonts/type1/public/cm-super/sfsx1095.pfb><C:/Program Files/miktex 2.9v2/fonts
-/type1/public/cm-super/sfsx1200.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/
-public/cm-super/sfsx1440.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/
-cm-super/sfti0900.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-supe
-r/sfti1095.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfti1
-200.pfb>
-Output written on FDI_project.pdf (18 pages, 1376083 bytes).
-=======
-Overfull \hbox (8.48456pt too wide) in paragraph at lines 411--435
- [] 
- []
-
-[12 <./Graphics/mlog_overl_ppb.png (PNG copy)>] [13] (./FDI_project.bbl)
-[14] [3] (./FDI_project.aux) ) 
-Here is how much of TeX's memory you used:
- 19759 strings out of 492649
- 396006 string characters out of 6129621
- 529511 words of memory out of 5000000
- 23377 multiletter control sequences out of 15000+600000
- 553472 words of font info for 78 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 57i,13n,100p,10362b,587s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvi
-ps/cm-super/cm-super-t1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-s
-uper/sfbx1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-sup
-er/sfbx2074.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super
-/sfcc1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/s
-fcc1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfc
-c1728.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0
-600.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm080
-0.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0900.
-pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on FDI_project.pdf (18 pages, 1338520 bytes).
->>>>>>> f9f8fc35e0d8da7238329cfced1835b4f7f355dd
+rogram Files/miktex 2.9v2/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program 
+Files/miktex 2.9v2/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/
+miktex 2.9v2/fonts/type1/public/cm-super/sfbx1095.pfb><C:/Program Files/miktex 
+2.9v2/fonts/type1/public/cm-super/sfbx2074.pfb><C:/Program Files/miktex 2.9v2/f
+onts/type1/public/cm-super/sfcc1200.pfb><C:/Program Files/miktex 2.9v2/fonts/ty
+pe1/public/cm-super/sfcc1440.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/pub
+lic/cm-super/sfcc1728.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-
+super/sfrm0600.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/s
+frm0800.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfrm0900
+.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfrm1095.pfb><C
+:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Progr
+am Files/miktex 2.9v2/fonts/type1/public/cm-super/sfsx1095.pfb><C:/Program File
+s/miktex 2.9v2/fonts/type1/public/cm-super/sfsx1200.pfb><C:/Program Files/mikte
+x 2.9v2/fonts/type1/public/cm-super/sfsx1440.pfb><C:/Program Files/miktex 2.9v2
+/fonts/type1/public/cm-super/sfti0900.pfb><C:/Program Files/miktex 2.9v2/fonts/
+type1/public/cm-super/sfti1095.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/p
+ublic/cm-super/sfti1200.pfb>
+Output written on FDI_project.pdf (17 pages, 1332508 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
+ 134 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

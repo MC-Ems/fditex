@@ -29,6 +29,7 @@
 \usepackage{graphicx}
 \graphicspath{{Graphics/}}
 \usepackage{adjustbox}
+\usepackage{subcaption}
 
 % Table packages
 \usepackage{pdflscape} %To create landscape environments
@@ -111,7 +112,7 @@
 \section{Introduction}
 
 
-
+\comment{
 \section{Theoretical Background/Literature Review}
 
 \subsection{FDI}
@@ -145,10 +146,10 @@ The multinomial probit model is the preferable option compared to logit. Alterna
 
 \subsubsection*{Tests for variable selection}
 Strategies for the selection of variables to be used in estimating the propensity score: ...
-
+}
 
 \section{Data and Descriptive Analysis}
-Our analysis is based on observational firm-level data. The dataset comprises 11,323 firms, of which 4,460 received FDI in 2016. The FDI can be divided into three subcategories. Table \ref{tab:freq} shows the frequencies of each type of FDI in our sample. Among the recipients of FDI, most firms (1,965) received domestic market seeking FDI. 1,555 firms received technology intensive FDI and the remaining 640 firms received exports oriented FDI. The TFP outcome was measured in 2017. We standardize the outcome variable to a mean of zero and a standard deviation of one, to make its interpretation more intuitive. 
+Our analysis is based on observational firm-level data ranging from 2015 to 2017. The dataset comprises 11,323 firms, of which 4,460 received FDI in 2016. The FDI can be divided into three subcategories. Table \ref{tab:freq} shows the frequencies of each type of FDI in our sample. Among the recipients of FDI, most firms (1,965) received domestic market seeking FDI. 1,555 firms received technology intensive FDI and the remaining 640 firms received exports oriented FDI. The outcome variable TFP was measured in 2017 after the treatment. We standardize the outcome variable to a mean of zero and a standard deviation of one, to make the interpretation more intuitive. 
 
 %--------------------TABLE 1
 \begin{table}[h]
@@ -159,7 +160,7 @@ Our analysis is based on observational firm-level data. The dataset comprises 11
 \end{table}
 %---------------------------
 
-A set of categorical and continuous control variables was measured in 2015 (one year prior to the firms receiving FDI). Table \ref{tab:cat} provides an overview of the categorical variables and the frequencies of each category in our sample. The categorical variables are included as factor variables in the subsequent analysis. The port variable indicates whether a firm has access to a port within 500km. The legal ownership of a firm is captured in the ownership variable, where state owned firms represent the base group. The technology intensity of the industry the respective firm is operating in, is measured in four categories from low- to high-tech, low-tech being the base group. The R\&D dummy indicates whether a firm has invested in Research and Development in 2015. \\
+A set of categorical and continuous control variables was measured in 2015, one year prior to the firms receiving FDI. Table \ref{tab:cat} provides an overview of the categorical variables and the frequencies of each category in our sample. The categorical variables are included as factor variables in the subsequent analysis. The port variable indicates whether a firm has access to a port within 500km. The legal ownership of a firm is captured in the ownership variable. The technology intensity of the industry the respective firm is operating in, is measured in four categories from low- to high-tech. The R\&D dummy indicates whether a firm has invested in Research and Development in 2015. \\
 
 %-------------------------TABLE 2
 \begin{table}[h]
@@ -170,7 +171,7 @@ A set of categorical and continuous control variables was measured in 2015 (one 
 \end{table}
 %--------------------------------
 
-The summary statistics of the continuous variables wages, Total Factor Productivity (TFP), firm size (measured in number of employees), debts and the firms' export intensity are displayed in Table \ref{tab:cont}. The variables wages, employment and, to a lesser extent, debts show large differences between their mean and median values, hinting at the existence of outliers in the sample. Log transforming the skewed variables is an easy way of reducing the influence of extreme values. 
+The summary statistics of the continuous variables, i.e. wages,  total-factor productivity (TFP), firm size\footnote{Since the original variable is only available in logarithmic form and lacks an indicator for the unit of measurement we presume it is measured in number of employees.}, debts and the firms' export intensity are displayed in Table \ref{tab:cont}. The variables wages, employment and, to a lesser extent, debts show large differences between their mean and median values, hinting at the existence of outliers in the sample. Taking the logarithm of the skewed variables is an easy way of reducing the influence of extreme values. 
 
 %-----------------------TABLE 3
 \begin{table}[h]
@@ -181,7 +182,7 @@ The summary statistics of the continuous variables wages, Total Factor Productiv
 \end{table}
 %------------------------------
 
-However, during placebo estimation with a different outcome it became clear that not taking the logarithm of employment yields better covariate balance in all models. Therefore we use the untransformed variable. Noting an extreme value in the variable (see Figure \ref{fig:outliers}) we added a robustness check that excluded this observation, yielding essentially the same results. 
+However, during placebo estimation with a different outcome it became clear that using the untransformed employment variable yields better covariate balance in all models. Noting an extreme value in this variable (see Figure \ref{fig:outliers}) we added a robustness check that excluded this observation. 
  
 
 %-------------------FIGURE 1
@@ -191,9 +192,9 @@ However, during placebo estimation with a different outcome it became clear that
   	\label{fig:outliers}
 \end{figure} 
 %---------------------------
-%NOTE: change font to same as Latex uses
 
-To further motivate the use of matching estimators in estimating the effect of FDI on a firm's TFP, the differences in means between the firms that received FDI and the firms that did not are displayed in Table \ref{tab:meandiff1}. The t-tests show significant differences in all observable characteristics, meaning that there is in fact selection into treatment.
+
+To further motivate the use of propensity scores in estimating the effect of FDI on a firm's TFP, we show the differences in means between the firms that received FDI and the firms that did not in Table \ref{tab:meandiff1}. The t-tests show significant differences in all observable characteristics, meaning that there is in fact selection into treatment.
 
 %-------------------------------------TABLE 4
 \begin{table}[hbtp!]
@@ -204,30 +205,45 @@ To further motivate the use of matching estimators in estimating the effect of F
 \end{table}
 %------------------------------------------
 
-
+\newpage
 \section{Empirical Specification}
 
-In order to evaluate the causal effect of FDI on Total Factor Productivity (TFP) we estimate different propensity score estimators. The causal effect of TFP for firm i is defined as follows: 
-\begin{align*}
-Y_{i}(1) - Y_{i}(0)
-\end{align*},
-where $Y_{i}(1)$ and $Y_{i}(0)$ are potential outcomes. $Y_{i}(1)$ indexes TFP that would be realised with treatment. $Y_{i}(0)$ is the TFP that would be realised without the treatment. To estimate the average causal effect of the treatment amongst all firms in the popluation we use the Average Treatment Effect (ATE) which is generally defined as: 
+
+We have seen in Table \ref{tab:meandiff1} that firms which received FDI differ significantly from those that did not. This indicates that treatment was not randomly assigned to firms. Thus, a simple comparison of treated and untreated firms will yield a biased treatment effect. Instead, we use propensity score estimation to compare the outcomes of similar firms. For this purpose we estimate the  likelihood of treatment for each firm, i.e. the propensity score. It is based on a set of observable characteristics that influence both the outcome and the likelihood of treatment. 
+
+For the main model we use the nearest-neighbour matching estimator, which compares the outcomes of treated observations to the closest control observation in terms of propensity scores. We estimate matching models  with one and five nearest neighbours, with replacement. For the latter model we add a caliper cutoff at 0.05. 
+
+We also fit inverse probability weighting models, which weigh observations by the inverse probability of being in their observed treatment group. Further we estimate the treatment effect using the augmented inverse probability weighting model, which adds covariate adjustment to the weighting. Thus, as long as either the propensity score or the covariate adjustment model is correctly specified the results are unbiased. (CITATION NEEDED)
+
+The point of using multiple estimators is mainly to show their convergence of estimates given our large sample size. As long as results are reasonably close to each other we can take this as an indicator that the selection bias has been eliminated. (CITATION NEEDED)
+
+
+\comment{
+To estimate the average causal effect of the treatment amongst all firms in the popluation we use the Average Treatment Effect (ATE) which is generally defined as: 
 \begin{align*}
 ATE \equiv E[Y_{i}(1)] - E[Y_{i}(0)]
-\end{align*}, 
-$E[.]$ denotes the expectation opertaor. A fundamental problem of causal inference is however, missing data. That is, we do not observe $Y_{i}(0)$. Hence, crucial to the analysis is the construction of the counterfactual term. As we face self-selection of firms into the treatment group we assume that the difference in outcome between treatment and non-treatment group are captured by a vector of observables X and the pre-entry level of the outcome variable \citep[][compare]{dehejia2002}. 
+\end{align*} 
+
+where $Y_{i}(1)$ and $Y_{i}(0)$ are potential outcomes under treatment and no treatment, respectively. However we do not observe the counterfactual outcome of each firm. By just comparing outcomes of treated and untreated firms results might be biased by selection into treatment. Instead, we use for the counterfactural an estimated weighted average of the outcomes in the control group. The weights are determined by the vector of observable characteristics that determine selection into treatment. We are thus comparing like to like.  
+
+
+As we face self-selection of firms into the treatment group we assume that the difference in outcome between treatment and non-treatment group are captured by a vector of observables X and the pre-entry level of the outcome variable \citep[][compare]{dehejia2002}. 
 To obtain a valid control group we use "propensity score matching" method by \citet{rosenbaum1983}. This allows us to match firms which are similar in terms of their estimated propensity scores.
 The probability of a firm receiving FDI $p(X_ {i}$ for is formally given by: 
 \begin{align*}
 p(X_{i})  \equiv  Pr(FDI_{i}|X_{i})
 \end{align*} REFERENCE {DEHEJI}
-We use different estimators which differ in the specification of the counterfactual by giving different weights to the matched firms. We firstly use nearest-neighbour matching with one neighbour and with replacement. Second, we estimate a nearest neighbour model with 5 neighbours with replacement and a caliper of 0.05. Further, we use  inverse probability weighting (IPW) and augmented-inverse probability weighting (AIPW) estimators. Since we have a large sample, the different estimators should all yield essentially the same results.\\
-%Note: Second but no 'first'
-We use for the matching, weighting and regression adjustment models the same specification including the before-mentioned categorical and continuous variables. We unlog employment to improve covariate balance. We do not include the export variable as a matching covariate, since together with technology it predicts treatment too well and nearly eliminates overlap. 
-Propensity score matching requires that all variables which affect both outcome and likelihood of treatment are included as covariates. As Girma et al. (2004) show, productivity increases exports, not the other way around. %ALT: but the level of exports has no effect on productivity. Thus, we can exclude it.
-We do not include the port variable for the same theoretical reason. 
+We use different estimators which differ in the specification of the counterfactual by giving different weights to the matched firms. We firstly use nearest-neighbour matching with one neighbour and with replacement. Second, we estimate a nearest neighbour model with 5 neighbours with replacement and a caliper of 0.05. Further, we use  inverse probability weighting (IPW) and augmented-inverse probability weighting (AIPW) estimators. Since we have a large sample, the different estimators should all yield essentially the same results.\\}
 
-Our matching model is thus a logit regression of TFP in 2017 on Ownership, Technology Intensity, Research\&Development, logarithm of Wages, TFP in 2015, Employment and Debts. This yields a very good overlap and covariate balance (the latter discussed in more detail below). Figure \ref{fig:overlap} shows proof of sufficient overlap for a matching analysis. 
+
+
+
+
+%Note: Second but no 'first'
+ We use the same specification of covariates for the matching, weighting and regression adjustment models, unless stated otherwise. We do not include the export variable as a matching covariate, since only covariates that influence the likelihood of treatement and the outcome of interest should be included.
+Although there is some debate about the direction of causality between exports and productivity, in his literature review Wagner CITATION (2007) argues that productivity increases exports, but not the other way around. The exclusion of the export variable significantly improves  covariate balance. We do not include the port variable for the same reason. 
+
+Our matching model is thus a logit regression of the dummy that is equal to one if the firm received FDI in 2016 on ownership, technology intensity, a Research\&Development dummy, the logarithm of wages, TFP, employment and debts in 2015. Figure \ref{fig:overlap} shows evidence of sufficient overlap for a matching analysis. The covariate balances are discussed in more detail below.
 
 %-------------------FIGURE 2
 \begin{figure}[h]\centering
@@ -241,6 +257,10 @@ Our matching model is thus a logit regression of TFP in 2017 on Ownership, Techn
 \subsection{Effect of FDI on TFP}
 
 %-------------------------------------TABLE 5
+
+
+The main findings of this paper are displayed in Table \ref{tab:mainresults}. It reports the Average Treatment Effects for FDI on TFP. Across estimators, we find large and highly significant coefficients, showing that receiving FDI increases TFP of companies on average. The reported coefficients differ only slightly in magnitude. 
+Column (1) shows the results of a one-to-one propensity score matching with replacement. Receiving FDI  increases factor productivity by 13\% of a standard deviation for the average company. Slightly lower results are obtained from a propensity score matching with five nearest neighbors and a caliper of 0.05 in column (2) as well as for the inverse IPW in column (3). The caliper cutoff excluded five obsevations. The estimate of the doubly robust AIPW-estimator is slightly larger than that of the main model, but all estimates differ by no more than 3\% of a standard deviation.
 
 \begin{table}[h]
  	\centering
@@ -276,9 +296,6 @@ PO Means 	& & & -0.068*** &  -0.057*** \\
 \end{threeparttable}
 \end{table}
 %------------------------------------------
-
-The main findings of this paper are displayed in Table \ref{tab:mainresults}. It reports the Average Treatment Effects (ATE) for FDI on TFP. Across estimators, we find large and highly significant coefficients showing that receiving FDI increases TFP of companies on average. The reported coefficients differ only slightly in magnitude, suggesting that the matching model is correctly specified. 
-Column (1) shows the results of a one-to-one propensity score matching with replacement. Receiving FDI  increases factor productivity by 13\% of a standard deviation for the average company. Slightly lower results are obtained from a propensity score matching with five nearest neighbors and a caliper of 0.05 as well as for the inverse IPW. The doubly robust AIPW-estimator is slightly larger than the main model, but the estimators are within three percent of each other.
 
 Checking the covariate balances of our models, we prefer the one-to-one propensity score matching as it gives us the best covariate balance of all the estimators \textit{see Appendix}. %In the next subsection, we probe the sensitivity of your findings in more detail for one-to-one propensity score matching. 
 
@@ -392,13 +409,16 @@ In Table \ref{tab:bytype} the results from the type-wise analysis are shown. In 
 
 
 %-------------------FIGURE 2
-\begin{figure}[h]\centering
-\caption{Propensity Score by Treatment Level}
-\includegraphics[height=11cm]{mlog_overl_ppb.png}\\[0.5cm] 
-\label{fig:psbytype}
+\begin{figure}[h]
+	
+	\caption{Propensity Score by Treatment Level}
+\hspace*{-2cm}  	
+	\includegraphics[height=12cm]{overlap_type.png}\\ 
+	\label{fig:over_typ}
+ 
 \end{figure}
-%------------------------
-% double headline should be removed
+
+
 
 
 %-----------------------------TABLE 8
