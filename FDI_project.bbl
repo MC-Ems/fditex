@@ -1,5 +1,11 @@
 \begin{thebibliography}{}
 
+\bibitem[Aitken and Harrison, 1999]{aitken99}
+Aitken, B.~J. and Harrison, A.~E. (1999).
+\newblock Do domestic firms benefit from direct foreign investment? evidence
+  from venezuela.
+\newblock {\em American Economic Review}, 89(3):605--618.
+
 \bibitem[Caliendo et~al., 2008]{CaliendoHujerThomsen2008}
 Caliendo, M., Hujer, R., and Thomsen, S.~L. (2008).
 \newblock Identifying effect heterogeneity to improve the efficiency of job
@@ -12,6 +18,11 @@ Caliendo, M. and Kopeinig, S. (2008).
   matching.
 \newblock {\em Journal of Economic Surveys}, 22(1):31--72.
 
+\bibitem[Dehejia and Wahba, 2002]{dehejia2002}
+Dehejia, R.~H. and Wahba, S. (2002).
+\newblock Propensity score-matching methods for nonexperimental causal studies.
+\newblock {\em Review of Economics and statistics}, 84(1):151--161.
+
 \bibitem[Haskel et~al., 2007]{Haskel2007}
 Haskel, J.~E., Pereira, S.~C., and Slaughter, M.~J. (2007).
 \newblock Does inward foreign direct investment boost the productivity of
@@ -23,6 +34,12 @@ Keller, W. and Yeaple, S.~R. (2009).
 \newblock Multinational enterprises, international trade, and productivity
   growth: firm-level evidence from the united states.
 \newblock {\em The Review of Economics and Statistics}, 91(4):821--831.
+
+\bibitem[Rosenbaum and Rubin, 1983]{rosenbaum1983}
+Rosenbaum, P.~R. and Rubin, D.~B. (1983).
+\newblock The central role of the propensity score in observational studies for
+  causal effects.
+\newblock {\em Biometrika}, 70(1):41--55.
 
 \bibitem[Smarzynska~Javorcik, 2004]{Smarzynska2004}
 Smarzynska~Javorcik, B. (2004).
