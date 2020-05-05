@@ -337,15 +337,15 @@ One shortcoming of our analysis is the missing capability of explaining the mech
 \section{Analysis by Type}
 
 
-To further test the robustness of our results  we continue our analysis by looking at potential heterogeneity of the treatment effect across types of FDI. Recall the three types of FDI from table 1 as Exports oriented, Technology intensive and Domestic market seeking, with the the latter being most common and the first being least common.
-We test the possibility that one specific type of Investment single handedly drives our previous results.  It is possible, that for example only exports-oriented increased factor productivity while the other two types had little or no impact. 
+To further test the robustness of our results  we continue our analysis by looking at potential heterogeneity of the treatment effect across types of FDI. Recall the three types of FDI from table 1 as Exports oriented, Technology intensive and Domestic market seeking, with the the latter being most and the first being least common.
+We test for the possibility that one specific type of investment single handedly drives our previous results.  It is possible, that for example only exports-oriented increased factor productivity while the other two types had little or no impact. 
 
-We estimate an augmented IPW model with multi-valued treatment effects. The matching covariates are the same as in the previous model and the regression adjustment specification is the same as that for propensity score estimation. The covariate balance is good, but the variance ratio of employment (unlogged) is a borderline case. \footnote{Unfortunately an AIPW model with any interactions did not converge, so it was impossible to try and improve the balance this way.}
+First we estimate a regression adjusted IPW model with multi-valued treatment effects. The matching covariates are the same as in the previous model and the regression adjustment specification is the same as that for propensity score estimation. The covariate balance is very good for all variables, except for the variance ratio of employment (0.54 for exports oriented FDI). \footnote{Unfortunately AIPW models with any interaction did not converge, so it was impossible to try and improve the balance in this way.}
 
-Second, we estimate an IPW model to check if it yields similar estimates without regression adjustment. The covariate balance in this model is practially the same. Finally, we estimate a set of AIPW models where we restrict the sample to one type of treatment each. This allows for the IIA assumption to be relaxed which is required for the Mulitnomial Logit models. The seperate models have worse covariate balance than the first two but are borderline acceptable. The overlap assumption is satisfied for all treatment levels as can be seen in graph \ref{fig:psbytype}. 
+Second, we estimate an IPW model to check if it yields similar estimates without regression adjustment. The covariate balance in this model is practially the same. Finally, we estimate a set of AIPW models where we restrict the sample to one type of treatment each. This allows for the IIA assumption to be relaxed, which is required for Multinomial Logit models. The seperate models have worse covariate balances than the multinomials but are borderline acceptable. The overlap assumption is satisfied for all treatment levels as can be seen in graph \ref{fig:psbytype}. 
 
 
-In Table \ref{tab:bytype} the results from the typewise analysis are shown. In the AIPW Multinomial specification the ATE of different types of FDI are within half a percent of of each other. This suggests, that all types of FDI increase factor productivtiy by essentially the same margin. The estimated effect size is close to the one estimated for FDI in table 2. In the IPW specification the differences slightly larger but still within 5\% of a standard deviation of each other.  The seperate logit models also yield essentially the same effect sizes as the multinomial specification. Since the AIPW estimator is doubly robust (assuming correctly specified regression adjustment models) models (1) and (3) provide us with strong evidence of homogenous effects.
+In Table \ref{tab:bytype} the results from the typewise analysis are shown. In the AIPW Multinomial specification the ATE of different types of FDI are within half a percent of each other. This suggests, that all types of FDI increase factor productivtiy by essentially the same margin. The estimated effect size is close to the one estimated for FDI in table 2. In the IPW specification the differences are slightly larger but still within 5\% of a standard deviation of each other.  The seperate logit models also yield essentially the same effect sizes as the multinomial specification. Since the AIPW estimator is doubly robust (assuming correctly specified regression adjustment models) models (1) and (3) provide us with strong evidence of homogenous effects.
 
 
 %-------------------FIGURE 2
@@ -373,14 +373,15 @@ In Table \ref{tab:bytype} the results from the typewise analysis are shown. In t
 	& Mlogit & Mlogit &Logit &Logit &Logit\\
 		\hline
  			&  &  &  &  &   \\
-Exports-oriented FDI 	& 0.144*** &   0.157*** & 0.140*** &  &  \\
- 						& (0.006) &   (0.032) & (0.007) &  &\\
-Technology intensive FDI & 0.139***   & 0.112*** &  & 0.139*** &   \\
- 						 & (0.005)  & (0.018) &  &  (0.005)&  \\
-Domestic market seeking FDI & 0.143*** &   0.134*** &  &  &0.143*** \\
- 							& (0.004)   & (0.011) &  &  & (0.004)  \\
-PO Means 		&   -0.057*** &   -0.068*** &-0.012  &-0.025**  & -0.017    \\
- 				&   (0.009) &   (0.010) &  (0.011)&(0.011)  & (0.011) \\
+Exports-oriented FDI & 0.144*** &   0.157*** &  0.140*** &  &   \\
+ & (0.006) &   (0.032) &  (0.007) &  &   \\
+Technology intensive FDI & 0.139*** &   0.112*** &  & 0.139*** &    \\
+ & (0.005) &   (0.018) &  &  (0.005)&    \\
+Domestic market seeking FDI& 0.143*** &   0.134*** &  &  & 0.143*** \\
+ & (0.004) &   (0.011) &  &  & (0.004)  \\
+PO Means &   -0.057*** &   -0.068*** & -0.012 &   -0.025** &   -0.017   \\
+ &   (0.009) &   (0.010) &  (0.011) &   (0.011) &   (0.011) \\
+
 Observations 	& 11,323  & 11,323 &  7,803  & 8,418 & 8,828  \\ 
 		\hline
 		\hline
