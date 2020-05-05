@@ -213,17 +213,6 @@ For the matching,  weighting  and regression adjustment models we use the same s
 Propensity score matching requires that all variables which affect both outcome and likelihood of treatment are included as covariates. As Girma et al. (2004) show, productivity increases exports, not the other way around. %ALT: but the level of exports has no effect on productivity. Thus, we can exclude it.
 We do not include the port variable for the same theoretical reason. 
 
-%--------------------------------EQUATION 1
-\begin{align*}
-TFP  =&  \beta_{0} + \beta_{1} FDI + \beta_{2} X_{i 2015} + \epsilon_{i}   
-\end{align*}
-where
-\begin{itemize}
-\item \textit{FDI} is a non-random treatment variable. It takes value 1 in case of treatment, 0 otherwise;
-\item  $X_{i 2015}$ describes control variables and consists of following pre-treatment covariates: Ownership, Technology Intensity, Research\&Development, logarithm of Wages, Total Factor Productivity, Employment and Debts
-\end{itemize}
-%------------------------------------------
-
 Our matching model is thus a logit regression of TFP in 2017 on Ownership, Technology Intensity, Research\&Development, logarithm of Wages, TFP in 2015, Employment and Debts. This yields a very good overlap and covariate balance (the latter discussed in more detail below). Figure \ref{fig:overlap} shows proof of sufficient overlap for a matching analysis. 
 
 %-------------------FIGURE 2
