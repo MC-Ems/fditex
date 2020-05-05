@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.23)  5 MAY 2020 10:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.11.23)  5 MAY 2020 13:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -939,55 +939,51 @@ Package pdftex.def Info: Graphics/emp15_outliers.png  used on input line 190.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3] (./baltab_fdi.tex) [4] [5]
-<Graphics/overlap.png, id=51, 883.3pt x 588.1975pt>
+[3] (./baltab_fdi.tex) [4] [5] [6 <./Graphics/emp15_outliers.png (PNG copy)>]
+<Graphics/overlap.png, id=53, 883.3pt x 588.1975pt>
 File: Graphics/overlap.png Graphic file (type png)
 <use Graphics/overlap.png>
-Package pdftex.def Info: Graphics/overlap.png  used on input line 232.
+Package pdftex.def Info: Graphics/overlap.png  used on input line 235.
 (pdftex.def)             Requested size: 418.25555pt x 278.51715pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[7 <./Graphics/overlap.png (PNG copy)>] [8]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./Graphics/emp15_outliers.png (PNG copy)>] [7 <./Graphics/overlap.png (PNG 
-copy)>] [8] [9] [10]
-<Graphics/mlog_overl_ppb.png, id=69, 883.3pt x 588.1975pt>
+[9] [10] [11]
+<Graphics/mlog_overl_ppb.png, id=71, 883.3pt x 588.1975pt>
 File: Graphics/mlog_overl_ppb.png Graphic file (type png)
 <use Graphics/mlog_overl_ppb.png>
-Package pdftex.def Info: Graphics/mlog_overl_ppb.png  used on input line 394.
+Package pdftex.def Info: Graphics/mlog_overl_ppb.png  used on input line 397.
 (pdftex.def)             Requested size: 470.00674pt x 312.9803pt.
 
-Overfull \hbox (51.75119pt too wide) in paragraph at lines 394--394
+Overfull \hbox (51.75119pt too wide) in paragraph at lines 397--397
  [][] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (8.48456pt too wide) in paragraph at lines 407--431
+Overfull \hbox (8.48456pt too wide) in paragraph at lines 410--434
  [] 
  []
 
-[11]
+[12 <./Graphics/mlog_overl_ppb.png (PNG copy)>]
 
-Package natbib Warning: Citation `aitken99' on page 12 undefined on input line 
-449.
+Package natbib Warning: Citation `aitken99' on page 13 undefined on input line 
+452.
 
-[12 <./Graphics/mlog_overl_ppb.png (PNG copy)>] [13] (./FDI_project.bbl)
-[14]
+[13] (./FDI_project.bbl) [14]
 
 Package natbib Warning: There were undefined citations.
 
 [3] (./FDI_project.aux) ) 
 Here is how much of TeX's memory you used:
- 19752 strings out of 492649
- 395875 string characters out of 6129621
- 529398 words of memory out of 5000000
- 23370 multiletter control sequences out of 15000+600000
+ 19750 strings out of 492649
+ 395838 string characters out of 6129621
+ 529399 words of memory out of 5000000
+ 23368 multiletter control sequences out of 15000+600000
  553472 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,13n,100p,10362b,587s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -997,27 +993,26 @@ msfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmmi9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfb
-x1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx2
-074.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfcc120
-0.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfcc1440.
-pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on FDI_project.pdf (18 pages, 1343064 bytes).
+/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/
+sfbx1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sf
+bx2074.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfcc
+1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfcc14
+40.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfcc1728
+.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0600.p
+fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local
+/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on FDI_project.pdf (18 pages, 1337594 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
+ 152 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
