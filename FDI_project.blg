@@ -1,46 +1,46 @@
-This is BibTeX, Version 0.99d (TeX Live 2018)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: FDI_project.aux
 The style file: apalike.bst
 Database file #1: bibCG.bib
-You've used 8 entries,
+You've used 7 entries,
             1935 wiz_defined-function locations,
-            535 strings with 5266 characters,
-and the built_in function-call counts, 3214 in all, are:
-= -- 323
-> -- 108
+            522 strings with 4946 characters,
+and the built_in function-call counts, 2644 in all, are:
+= -- 264
+> -- 84
 < -- 6
-+ -- 36
-- -- 34
-* -- 293
-:= -- 552
-add.period$ -- 24
-call.type$ -- 8
-change.case$ -- 57
-chr.to.int$ -- 8
-cite$ -- 8
-duplicate$ -- 112
-empty$ -- 239
-format.name$ -- 52
-if$ -- 627
++ -- 26
+- -- 26
+* -- 231
+:= -- 460
+add.period$ -- 21
+call.type$ -- 7
+change.case$ -- 47
+chr.to.int$ -- 7
+cite$ -- 7
+duplicate$ -- 98
+empty$ -- 200
+format.name$ -- 41
+if$ -- 516
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 8
-newline$ -- 43
-num.names$ -- 24
-pop$ -- 35
+newline$ -- 38
+num.names$ -- 21
+pop$ -- 33
 preamble$ -- 1
-purify$ -- 57
+purify$ -- 48
 quote$ -- 0
-skip$ -- 87
+skip$ -- 76
 stack$ -- 0
-substring$ -- 280
-swap$ -- 8
+substring$ -- 214
+swap$ -- 7
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
+type$ -- 40
 warning$ -- 0
-while$ -- 29
+while$ -- 24
 width$ -- 0
-write$ -- 106
+write$ -- 92
