@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.10)  7 MAY 2020 19:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.10)  9 MAY 2020 17:30
 entering extended mode
 **./FDI_project.tex
 (FDI_project.tex
@@ -696,22 +696,18 @@ File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 
  [2] [1]
 (fditype_freq.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
-[2] (cat_freq.tex) (cont_summ.tex)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[3]
-<Graphics/emp15_outliers.png, id=33, 693.59125pt x 461.725pt>
+[2] (cat_freq.tex) (cont_summ.tex) [3]
+<Graphics/emp15_outliers.png, id=34, 693.59125pt x 461.725pt>
 File: Graphics/emp15_outliers.png Graphic file (type png)
 <use Graphics/emp15_outliers.png>
-Package pdftex.def Info: Graphics/emp15_outliers.png  used on input line 173.
+Package pdftex.def Info: Graphics/emp15_outliers.png  used on input line 165.
 (pdftex.def)             Requested size: 418.25555pt x 278.43916pt.
- (baltab_fdi.tex) [4 <./Graphics/emp15_outliers.png (PNG copy)>] [5]
-Overfull \hbox (33.08215pt too wide) in paragraph at lines 221--222
+ [4 <./Graphics/emp15_outliers.png (PNG copy)>] (baltab_fdi.tex) [5]
+Overfull \hbox (33.08215pt too wide) in paragraph at lines 195--196
 \T1/cmr/m/n/10.95 one if the firm re-ceived FDI in 2016 on own-er-ship, tech-no
 l-ogy in-ten-sity, a Re-search&Development
  []
@@ -719,10 +715,10 @@ l-ogy in-ten-sity, a Re-search&Development
 <Graphics/graph.png, id=42, 883.3pt x 588.1975pt>
 File: Graphics/graph.png Graphic file (type png)
 <use Graphics/graph.png>
-Package pdftex.def Info: Graphics/graph.png  used on input line 226.
+Package pdftex.def Info: Graphics/graph.png  used on input line 201.
 (pdftex.def)             Requested size: 418.25555pt x 278.51715pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6]
 
@@ -736,29 +732,37 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
+
+ []
+
 [10] [11]
 <Graphics/overlap_type.png, id=63, 883.3pt x 588.1975pt>
 File: Graphics/overlap_type.png Graphic file (type png)
 <use Graphics/overlap_type.png>
-Package pdftex.def Info: Graphics/overlap_type.png  used on input line 403.
+Package pdftex.def Info: Graphics/overlap_type.png  used on input line 363.
 (pdftex.def)             Requested size: 512.73218pt x 341.43306pt.
 
-Overfull \hbox (39.99274pt too wide) in paragraph at lines 402--405
+Overfull \hbox (39.99274pt too wide) in paragraph at lines 362--365
 []|  [] 
  []
 
 
-Overfull \hbox (8.48463pt too wide) in paragraph at lines 417--446
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (8.48463pt too wide) in paragraph at lines 377--405
  [] 
  []
 
-[12 <./Graphics/overlap_type.png (PNG copy)>] [13] [14] (FDI_project.bbl)
+[12] [13 <./Graphics/overlap_type.png (PNG copy)>] [14] (FDI_project.bbl)
 [15] [3] (FDI_project.aux) ) 
 Here is how much of TeX's memory you used:
- 13128 strings out of 481565
- 269332 string characters out of 2913711
- 606569 words of memory out of 3000000
- 28121 multiletter control sequences out of 15000+200000
+ 13140 strings out of 481565
+ 269563 string characters out of 2913711
+ 607702 words of memory out of 3000000
+ 28133 multiletter control sequences out of 15000+200000
  554864 words of font info for 79 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  65i,13n,115p,10132b,582s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -779,11 +783,10 @@ s\Emilie\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.p
 k> <C:\Users\Emilie\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
 \ecbx2074.pk> <C:\Users\Emilie\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappe
 n/ec/dpi600\eccc1200.pk> <C:\Users\Emilie\AppData\Local\MiKTeX\2.9\fonts/pk/ljf
-our/jknappen/ec/dpi600\eccc1440.pk><C:/Users/Emilie/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on FDI_project.pdf (19 pages, 1178536 bytes).
+our/jknappen/ec/dpi600\eccc1440.pk>
+Output written on FDI_project.pdf (19 pages, 1180108 bytes).
 PDF statistics:
- 546 PDF objects out of 1000 (max. 8388607)
+ 560 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
