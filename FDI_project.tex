@@ -6,6 +6,7 @@
 \documentclass[a4paper,11pt]{scrartcl}
 \usepackage[T1]{fontenc}
 \usepackage{setspace}
+\setlength\parindent{24pt}
 \onehalfspacing
 \DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf} % Includes an old command that is part of some package in here (just to make sure everything runs)
 
@@ -116,13 +117,22 @@
 \section{Introduction}
 
 The understanding of potential effects of Foreign Direct Investment (FDI) on a firm's productivity is of major concern to policy makers. FDI is commonly associated with higher firm productivity \citep{girma2007}. Despite many efforts of researchers to identify the causal mechanisms underlying this correlation, it remains difficult to pin down the size and direction of the relationship. Most argue that foreign investment positively impacts firm productivity. However, it is also possible that foreign investors choose %pick
-more productive firms \citep{arnold2009}. %In this case, the direction of causality would be reversed. 
-In order to identify the causal effect of FDI on a firm’s performance, and in particular on its total-factor productivity (TFP), one would need to know the counterfactual outcome. Although it is inherently unobservable, different methods can be used to take into account the biases stemming from this missing data problem, e.g. randomization, Difference-in-Differences (DiD), as well as %or
-Instrumental Variable and Propensity Score methods \citep{karpaty2007}. A common method in the economic literature combines DiD with Propensity Score-based estimators. The propensity score matching estimator is used in order to compare treated to those untreated firms that are similar in their likelihood of receiving treatment, given a set of observable pre-acquisition characteristics %(e.g. size, industry characteristics). 
-DiD estimation on the other hand accounts for unobservable firm characteristics which are constant over time. Estimations combining both methods provide a robust Average Treatment Effect (ATE). 
-Using this combination of methods, \citet{arnold2009}  find a positive and persistent effect of FDI on firm productivity. Their analysis suggests a 13.5\% increase in productivity of treated firms after three years. The same method is used by \citet{karpaty2007, girma2007} and \citet{schiffbauer2017}. \citet{karpaty2007} finds a positive effect of foreign acquisitions on productivity in Swedish manufacturing ranging between 7 and 8 percent for the DiD estimations. 
+more productive firms \citep{arnold2009}. %reversing the direction of causality.
+
+Identification of%In order to identify 
+the causal effect of FDI on a firm’s performance, %and 
+in particular %on 
+its total-factor productivity (TFP), %one would need to know 
+requires the counterfactual outcome. Although it is inherently unobservable, different methods can be used to take into account the biases stemming from this missing data problem, e.g. randomization, Difference-in-Differences (DiD), as well as %or
+Instrumental Variable and Propensity Score methods \citep{karpaty2007}. A common method in the economic literature combines DiD with Propensity Score-based estimators. The latter %propensity score matching estimator 
+is used in order to compare treated to those untreated firms which are similar in their likelihood of receiving treatment, given a set of observable pre-acquisition characteristics %(e.g. size, industry characteristics). 
+DiD estimation on the other hand accounts for unobservable firm characteristics that are constant over time. Estimations combining both methods provide a robust Average Treatment Effect (ATE). 
+
+This methodology is used by \citet{arnold2009, karpaty2007, girma2007} and \citet{schiffbauer2017}. \citet{arnold2009}  find a positive and persistent effect of FDI on firm productivity, estimating a 13.5\% increase in productivity of treated firms after three years.\citet{karpaty2007} finds a positive effect of foreign acquisitions on productivity in Swedish manufacturing ranging between 7 and 8 percent for the DiD estimators. However, it can take up to five years for productivity differences to occur. 
+
+%Using this methodology, \citet{arnold2009}  find a positive and persistent effect of FDI on firm productivity. Their analysis suggests a 13.5\% increase in productivity of treated firms after three years. The same method is used by \citet{karpaty2007, girma2007} and \citet{schiffbauer2017}. \citet{karpaty2007} finds a positive effect of foreign acquisitions on productivity in Swedish manufacturing ranging between 7 and 8 percent for the DiD estimations. 
 %Moreover, it can take up to five years for productivity differences to occur. 
-\citet{girma2007} use plant-level data for the UK for the electronic and food industries. The authors find substantial heterogeneity across industries especially with respect to the onset of positive effects on TFP growth. Their results suggest that any positive impact of foreign acquisitions is mainly explained by changes in technical efficiency rather than scale effects. \citet{koch2019} combine DiD with Inverse Propensity Score Weighting (IPW). They use Spanish firm level data %from 1998 to 2013, 
+\citet{girma2007} use plant-level data for the UK for the electronic and food industries and find substantial heterogeneity across industries, especially with respect to the onset of positive effects on TFP growth. Their results suggest that any positive impact of foreign acquisitions is mainly explained by changes in technical efficiency rather than scale effects. \citet{koch2019} combine DiD with Inverse Propensity Score Weighting (IPW). They use Spanish firm level data %from 1998 to 2013, 
 providing evidence of an increase in output of ten percent which is explained almost entirely through skill upgrading caused by foreign acquisition. 
 
 Using various Propensity Score estimators, we investigate the effect of FDI on TFP for a sample of 11,323 firms. In line with previous research, we %are able to 
