@@ -9,5 +9,4 @@
 \contentsline {section}{\numberline {5}Conclusion}{13}%
 \contentsline {section}{References}{15}%
 \contentsline {section}{\numberline {A}Appendix}{iii}%
-\contentsline {subsection}{\numberline {A.1}Treatment by Technology Intensity}{iii}%
-\contentsline {subsection}{\numberline {A.2}Stata Output}{iii}%
+\contentsline {subsection}{\numberline {A.1}Stata Output}{iii}%
