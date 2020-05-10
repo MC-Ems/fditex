@@ -142,7 +142,9 @@ identify a statistically and economically significant effect of FDI on firm prod
 The remainder of this paper is organized as follows: The data and empirical specification are presented in sections 2 and 3, respectively. The results and robustness checks are shown in section 4. Section 5 concludes.
 
 \section{Data and Descriptive Analysis}
-Our analysis is based on observational firm-level data ranging from 2015 to 2017. The dataset comprises 11,323 firms, of which 4,460 received FDI in 2016. FDI can be divided into three subcategories. Table \ref{tab:freq} shows the frequencies of each type of FDI in our sample. Among the recipients of FDI, most firms (1,965) received domestic market seeking FDI. 1,555 firms received technology intensive FDI and the remaining 640 firms received exports oriented FDI. The outcome variable TFP was measured in 2017 after the treatment. We standardize the outcome variable to a mean of zero and a standard deviation of one, to make the interpretation more intuitive. 
+Our analysis is based on observational firm-level data ranging from 2015 to 2017. The dataset comprises 11,323 firms, of which 4,460 received FDI in 2016. FDI can be divided into three subcategories. Table \ref{tab:freq} shows the frequencies of each type of FDI in our sample. Among the recipients of FDI, most firms (1,965) received domestic market seeking FDI. 1,555 firms received technology intensive FDI and the remaining 640 firms received exports oriented FDI. The outcome variable TFP was measured in 2017 %after the treatment. 
+We standardize TFP %the outcome variable 
+to a mean of zero and a standard deviation of one, making the interpretation more intuitive. 
 
 %--------------------TABLE 1
 \begin{table}[h!]
@@ -154,7 +156,7 @@ Our analysis is based on observational firm-level data ranging from 2015 to 2017
 %---------------------------
 
 A set of categorical and continuous control variables was measured in 2015, one year prior to the firms receiving FDI. Table \ref{tab:cat} provides an overview of the categorical variables and the frequencies of each category in our sample. %Table \ref{tab:cat} provides an overview of the categorical variables and their frequencies in our sample. 
-The categorical variables are included as factor variables in the subsequent analysis. %leave out?
+%The categorical variables are included as factor variables in the subsequent analysis. %leave out?
 The port variable indicates whether a firm has access to a port within 500km. The legal ownership of a firm is captured in the ownership variable. The technology intensity of the industry the respective firm is operating in, is measured in four categories from low- to high-tech. The R\&D dummy indicates whether a firm has invested in Research and Development in 2015. \\
 
 %-------------------------TABLE 2
@@ -176,7 +178,7 @@ The port variable indicates whether a firm has access to a port within 500km. Th
 %------------------------------
 \newpage
 
-The summary statistics of the continuous variables, i.e. wages,  total-factor productivity (TFP), firm size\footnote{Since the original variable is only available in logarithmic form and lacks an indicator for the unit of measurement we presume it is measured in number of employees.}, debts and the firms' export intensity are displayed in Table \ref{tab:cont}. The variables wages, employment and, to a lesser extent, debts show large differences between their mean and median values, hinting at the existence of outliers in the sample. Taking the logarithm of the skewed variables is an easy way of reducing the influence of extreme values. However, including the log transformed employment variable deteriorates the covariate balance in all estimated models. We therefore include the untransformed employment variable for the estimation of our models, despite noting at least one extreme value in this variable (see Figure \ref{fig:outliers}). To rule out any bias due to outliers, we test the robustness of our models to the exclusion of observations with extreme values in the employment variable in section 4.
+The summary statistics of the continuous variables, i.e. wages,  total-factor productivity (TFP), firm size\footnote{Since the original variable is only available in logarithmic form and lacks an indicator for the unit of measurement we assume it is measured in number of employees.}, debts and the firms' export intensity are displayed in Table \ref{tab:cont}. The variables wages, employment and, to a lesser extent, debts show large differences between their mean and median values, hinting at the existence of outliers in the sample. Taking the logarithm of the skewed variables reduces the influence of extreme values. However, including the log transformed employment variable yields worse covariate balance in all estimated models. We therefore include the untransformed employment variable in our models, despite noting at least one extreme value in this variable (see Figure \ref{fig:outliers}). We test the robustness of our models to the exclusion of observations with extreme values in the employment variable in section 4.
 
 %ALT (saves 20 words): The variables wages and employment show large differences between their mean and median values. An easy way to reduce the influence of extreme values potentially causing this divergence is to take the logarithm of these variables. However, including the log transformed employment variable deteriorates the covariate balance in all estimated models. We therefore include the untransformed employment variable in the subsequent analysis, despite noting at least one extreme value in this variable (see Figure \ref{fig:outliers}). We test the robustness of our models to the exclusion of observations with extreme values in the employment variable in section 4.
 
@@ -190,7 +192,7 @@ The summary statistics of the continuous variables, i.e. wages,  total-factor pr
 %---------------------------
 \newpage
 
-To further motivate the use of propensity scores in estimating the effect of FDI on a firm's TFP, we show the differences in means between the firms that received FDI and the firms that did not in Table \ref{tab:meandiff1}. The t-tests show significant differences in all observable characteristics, meaning that there is in fact selection into treatment. %OR: meaning that firms are in fact chosen to receive FDI based on specific characteristics.
+To further motivate the use of propensity scores in estimating the effect of FDI on a firm's TFP, we show the differences in means between  firms that received FDI and firms that did not in Table \ref{tab:meandiff1}. The t-tests show significant differences in all observable characteristics, suggesting that there is in fact selection into treatment. %OR: meaning that firms are in fact chosen to receive FDI based on specific characteristics.
 
 %-------------------------------------TABLE 4
 
@@ -206,27 +208,29 @@ To further motivate the use of propensity scores in estimating the effect of FDI
 \newpage
 \section{Empirical Specification}
 
-We have seen that FDI was not randomly assigned to firms. Thus, a simple comparison of treated and untreated firms will yield a biased treatment effect. %ALT:If FDI was not randomly assigned to firms, a simple comparison of treated and untreated firms will yield a biased treatment effect.
+We have seen that FDI was not randomly assigned to firms. Thus, a simple comparison of treated and untreated firm outcomes will yield a biased treatment effect. %ALT:If FDI was not randomly assigned to firms, a simple comparison of treated and untreated firm outcomes will yield a biased treatment effect.
 Instead, we use propensity score estimation to compare the outcomes of similar firms. For this purpose we estimate the likelihood of treatment for each firm, i.e. the propensity score. It is based on a set of observable characteristics that influence both the outcome and the likelihood of treatment. We assume that conditional on these confounders, the treatment is independent of the potential outcome, i.e. the Conditional Independence Assumption (CIA) is satisfied. 
 
 %----------
-For the main model we use the nearest-neighbour matching estimator, which compares the outcomes of treated observations to the closest control observation in terms of propensity scores. We estimate matching models  with one and five nearest neighbours, with replacement. For the latter model we add a caliper cutoff at 0.05. We also fit inverse probability weighting models, which weigh observations by the inverse probability of being in their observed treatment group. Further, we estimate the treatment effect using the augmented inverse probability weighting model, which adds covariate adjustment to the weighting. Thus, as long as either the propensity score or the covariate adjustment model is correctly specified, the results are unbiased \citep[p.~393]{imbens2015}. The point of using multiple estimators is mainly to ensure that the investigated effect is robust to the use of different estimation methods.  
+For the main model we use the nearest-neighbour matching estimator, which compares the outcomes of treated observations to the closest control observation in terms of propensity scores. We estimate matching models  with one and five nearest neighbours with replacement. For the latter model we add a caliper cutoff at 0.05. We also fit inverse probability weighting models, which weigh observations by the inverse probability of being in their observed treatment group. Further, we estimate the treatment effect using the augmented inverse probability weighting model, which adds covariate adjustment to the weighing process. Thus, as long as either the propensity score or the covariate adjustment model is correctly specified, the results are unbiased \citep[p.~393]{imbens2015}. The point of using multiple estimators is  to ensure that the investigated effect is robust to the use of different estimation methods.  
 
-We use the same specification of covariates for the matching, weighting and regression adjustment models, unless stated otherwise. We do not include the export variable as a matching covariate, since only covariates that influence the likelihood of treatment and the outcome of interest should be included.
-Although there is some debate about the direction of causality between exports and productivity, in his literature review \citet{wagner2007} argues that productivity increases exports, but not the other way around. The exclusion of the export variable significantly improves covariate balance. We also do not include the port variable for the same reason.
+We use the same specification of covariates for the matching, weighting and regression adjustment models, unless stated otherwise. We do not include the export variable as a matching covariate, assuming that exports do not increase productivity
+%since only covariates that influence the likelihood of treatment and the outcome of interest should be included.
+Although there is some debate about the direction of causality between exports and productivity, in his literature review \citet{wagner2007} argues that productivity increases exports, but not the other way around. The exclusion of the export variable significantly improves covariate balance. For the same reason we do not include the port variable.
 
-Our matching model is thus a logit regression of the treatment dummy that is equal to one if the firm received FDI in 2016 on ownership, technology intensity, a Research\&Development dummy, the logarithm of wages, TFP, employment and debts in 2015. Figure \ref{fig:graph} shows evidence of sufficient propensity score overlap for a matching analysis. The covariate balance of the different models is discussed in more detail below.
+Our propensity score model is thus a logit regression of binary treatment on ownership, technology intensity, a Research\&Development dummy, the logarithm of wages, TFP, employment and debts in 2015. Figure \ref{fig:graph} shows evidence of sufficient propensity score overlap for a matching analysis. The covariate balance of the different models is discussed in more detail below.
 %-----------
 
 %ALT (mainly different order):
 \comment{
-We use the same specification of covariates for all estimators, unless stated otherwise. We do not include the export variable as a matching covariate, since only covariates that influence the likelihood of treatment and the outcome of interest should be included.
-Although there is some debate about the direction of causality between exports and productivity, in his literature review \citet{wagner2007} argues that productivity increases exports, but not the other way around. The exclusion of the export variable significantly improves covariate balance. We also do not include the port variable for the same reason.
+We use the same specification of covariates for all estimators, unless stated otherwise. We do not include the export variable as a matching covariate, assuming that exports do not increase firm productivity.
+%since only covariates that influence the likelihood of treatment and the outcome of interest should be included.
+Although there is some debate about the direction of causality between exports and productivity, in his literature review \citet{wagner2007} argues that productivity increases exports, but not the other way around. The exclusion of the export variable significantly improves covariate balance. We do not include the port variable for the same reason.
 
-Our matching model is thus a logit regression of the treatment dummy %that is equal to one if the firm received 
-FDI in 2016 on ownership, technology intensity, a Research\&Development dummy, the logarithm of wages, TFP, employment and debts in 2015. Figure \ref{fig:graph} shows evidence of sufficient propensity score overlap for a matching analysis. %The covariate balance of the different models is discussed in more detail below.
+Our matching model is thus a logit regression of binary treatment %that is equal to one if the firm received FDI in 2016 
+on ownership, technology intensity, a Research\&Development dummy, the logarithm of wages, TFP, employment and debts in 2015. Figure \ref{fig:graph} shows evidence of sufficient propensity score overlap for a matching analysis. %The covariate balance of the different models is discussed in more detail below.
 
-For the main model we use the nearest-neighbour matching estimator, which compares the outcomes of treated observations to the closest control observations in terms of propensity scores. We estimate matching models  with one and five nearest neighbours, with replacement. For the latter model we add a caliper cutoff at 0.05. We also fit inverse probability weighting models (IPW), which weigh observations by the inverse probability of being in their observed treatment group. Further, we estimate the treatment effect using the augmented inverse probability weighting model (AIPW), which adds covariate adjustment to the weighting. Thus, as long as either the propensity score or the covariate adjustment model is correctly specified, the results of the AIPW are unbiased \citep[p.~393]{imbens2015}. The point of using multiple estimators is to ensure that the investigated effect is robust to the use of different estimation methods.  }
+For the main model we use the nearest-neighbour matching estimator, which compares the outcomes of treated observations to the closest control observations in terms of propensity scores. We estimate matching models  with one and five nearest neighbours with replacement. For the latter model we add a caliper cutoff at 0.05. We also fit inverse probability weighting models (IPW), which weigh observations by the inverse probability of being in their observed treatment group. Further, we estimate the treatment effect using the augmented inverse probability weighting model (AIPW), which adds covariate adjustment to the weighing. Thus, as long as either the propensity score or the covariate adjustment model is correctly specified, the results of the AIPW are unbiased \citep[p.~393]{imbens2015}. The point of using multiple estimators is to ensure that the investigated effect is robust to the use of different estimation methods.  }
 
 
 %-------------------FIGURE 2
@@ -241,7 +245,7 @@ For the main model we use the nearest-neighbour matching estimator, which compar
 \section{Results}
 
 \subsection{Effect of FDI on TFP}
-The main findings of this paper are displayed in Table \ref{tab:mainresults}. It reports the Average Treatment Effects of FDI on TFP. Across different estimators, we find large and highly significant coefficients, indicating that receiving FDI increases TFP of companies on average. The reported coefficients differ only slightly in magnitude. 
+The main findings of this paper are displayed in Table \ref{tab:mainresults}. It reports the Average Treatment Effects of FDI on TFP. Across different estimators we find large and highly significant coefficients, indicating that receiving FDI increases TFP of companies on average. The reported coefficients differ only slightly in magnitude. 
 
 
 %-------------------------------------TABLE 5
@@ -278,7 +282,7 @@ PO Means 	& & & -0.068*** &  -0.057*** \\
 \end{table}
 %------------------------------------------
 
-Column (1) shows the results of a one-to-one propensity score matching with replacement. Had all firms in our sample received FDI, the TFP would have increased by 13 percent of a standard deviation on average. Slightly lower results are obtained from a propensity score matching with five nearest neighbors and a caliper of 0.05 in column (2). The caliper cutoff excluded five observations. The estimate of the IPW in column (3) is also somewhat below that of column (1). The estimate of the doubly robust AIPW-estimator is slightly larger, but all estimates differ by no more than 3 percent of a standard deviation.
+Column (1) shows the results of a one-to-one propensity score matching with replacement. Had all firms in our sample received FDI, the TFP would have increased by 13 percent of a standard deviation on average. Slightly lower results are obtained from a propensity score matching with five nearest neighbors and a caliper of 0.05 in column (2). The caliper cutoff excluded five observations. The estimate of the IPW in column (3) is also somewhat below that of column (1). The estimate of the doubly robust AIPW-estimator is slightly larger than in the first model, but all estimates differ by no more than 3 percent of a standard deviation.
 
 Checking the covariate balances of our models, the standardized differences and variance ratios are within a very good range for all models. We prefer the one-to-one propensity score matching as it gives us the best covariate balance of all the estimators. The maximum standardized difference among all covariates is four percent and the largest variance ratio is 1.7, with all others being close to one (see \ref{app:logfile}). 
 
