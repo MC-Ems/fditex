@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.17)  10 MAY 2020 12:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.17)  10 MAY 2020 19:06
 entering extended mode
 **./FDI_project.tex
 (FDI_project.tex
@@ -1264,27 +1264,39 @@ File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 
  [2] [1]
 (fditype_freq.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 158--161
+Underfull \hbox (badness 10000) in paragraph at lines 147--149
 
  []
 
-(cat_freq.tex) [2] (cont_summ.tex) [3]
+(cat_freq.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(cont_summ.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2] [3]
 <Graphics/emp15_outliers.png, id=34, 693.59125pt x 461.725pt>
 File: Graphics/emp15_outliers.png Graphic file (type png)
 <use Graphics/emp15_outliers.png>
-Package pdftex.def Info: Graphics/emp15_outliers.png  used on input line 189. o
-n input line 189.
+Package pdftex.def Info: Graphics/emp15_outliers.png  used on input line 177. o
+n input line 177.
 Package pdftex.def Info: Requested size: 418.25555pt x 278.43916pt on input lin
-e 189.
- [4 <./Graphics/emp15_outliers.png (PNG copy)>] (baltab_fdi.tex) [5]
+e 177.
+ [4 <./Graphics/emp15_outliers.png (PNG copy)>] (baltab_fdi.tex)
+[5]
+
+Package natbib Warning: Citation `Caliendo2008' on page 6 undefined on input li
+ne 203.
+
 <Graphics/graph.png, id=42, 883.3pt x 588.1975pt>
 File: Graphics/graph.png Graphic file (type png)
 <use Graphics/graph.png>
-Package pdftex.def Info: Graphics/graph.png  used on input line 240. on input l
-ine 240.
+Package pdftex.def Info: Graphics/graph.png  used on input line 214. on input l
+ine 214.
 Package pdftex.def Info: Requested size: 418.25555pt x 278.51715pt on input lin
-e 240.
-
+e 214.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1301,7 +1313,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
 
  []
 
@@ -1309,46 +1321,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 394--395
 <Graphics/overlap_type.png, id=63, 883.3pt x 588.1975pt>
 File: Graphics/overlap_type.png Graphic file (type png)
 <use Graphics/overlap_type.png>
-Package pdftex.def Info: Graphics/overlap_type.png  used on input line 415. on 
-input line 415.
+Package pdftex.def Info: Graphics/overlap_type.png  used on input line 384. on 
+input line 384.
 Package pdftex.def Info: Requested size: 512.73218pt x 341.43306pt on input lin
-e 415.
+e 384.
 
-Overfull \hbox (39.99274pt too wide) in paragraph at lines 414--417
+Overfull \hbox (39.99274pt too wide) in paragraph at lines 383--386
 []|  [] 
  []
 
 
-Overfull \hbox (8.48456pt too wide) in paragraph at lines 429--457
+Overfull \hbox (8.48456pt too wide) in paragraph at lines 398--426
  [] 
  []
 
 [12 <./Graphics/overlap_type.png (PNG copy)>] [13] [14] (FDI_project.bbl)
-[15] [3] (FDI_project.aux) ) 
+[15]
+
+Package natbib Warning: There were undefined citations.
+
+[3] (FDI_project.aux) ) 
 Here is how much of TeX's memory you used:
- 19782 strings out of 493308
- 390848 string characters out of 3137899
+ 19783 strings out of 493308
+ 390862 string characters out of 3137899
  509179 words of memory out of 3000000
- 23043 multiletter control sequences out of 15000+200000
+ 23044 multiletter control sequences out of 15000+200000
  552798 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  65i,13n,106p,10364b,581s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/miktex 2.9v2/fonts/enc/dvips/cm-s
-uper/cm-super-t1.enc}<C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super
-/sfbx1095.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfbx20
-74.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfcc1200.pfb>
-<C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfcc1440.pfb><C:/Pro
-gram Files/miktex 2.9v2/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Program Fi
-les/miktex 2.9v2/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/mik
-tex 2.9v2/fonts/type1/public/cm-super/sfrm0900.pfb><C:/Program Files/miktex 2.9
-v2/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Program Files/miktex 2.9v2/font
-s/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/miktex 2.9v2/fonts/type1
-/public/cm-super/sfsx1095.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public
-/cm-super/sfsx1200.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-sup
-er/sfsx1440.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfti
-0900.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfti1095.pf
-b><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on FDI_project.pdf (19 pages, 1321203 bytes).
+{C:/Program Files/miktex 2.9v2/fonts/enc/dvips/cm-super/
+cm-super-t1.enc}<C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfbx
+1095.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfbx2074.pf
+b><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfcc1200.pfb><C:/P
+rogram Files/miktex 2.9v2/fonts/type1/public/cm-super/sfcc1440.pfb><C:/Program 
+Files/miktex 2.9v2/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Program Files/m
+iktex 2.9v2/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/miktex 2
+.9v2/fonts/type1/public/cm-super/sfrm0900.pfb><C:/Program Files/miktex 2.9v2/fo
+nts/type1/public/cm-super/sfrm1095.pfb><C:/Program Files/miktex 2.9v2/fonts/typ
+e1/public/cm-super/sfrm1200.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/publ
+ic/cm-super/sfsx1095.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-s
+uper/sfsx1200.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sf
+sx1440.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfti0900.
+pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfti1095.pfb><C:
+/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on FDI_project.pdf (19 pages, 1324076 bytes).
 PDF statistics:
  129 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
