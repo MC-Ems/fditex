@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.17)  10 MAY 2020 12:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.17)  10 MAY 2020 12:45
 entering extended mode
 **./FDI_project.tex
 (FDI_project.tex
@@ -1264,26 +1264,26 @@ File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 
  [2] [1]
 (fditype_freq.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 156--159
+Underfull \hbox (badness 10000) in paragraph at lines 158--161
 
  []
 
-[2] (cat_freq.tex) (cont_summ.tex) [3]
+(cat_freq.tex) [2] (cont_summ.tex) [3]
 <Graphics/emp15_outliers.png, id=34, 693.59125pt x 461.725pt>
 File: Graphics/emp15_outliers.png Graphic file (type png)
 <use Graphics/emp15_outliers.png>
-Package pdftex.def Info: Graphics/emp15_outliers.png  used on input line 187. o
-n input line 187.
+Package pdftex.def Info: Graphics/emp15_outliers.png  used on input line 189. o
+n input line 189.
 Package pdftex.def Info: Requested size: 418.25555pt x 278.43916pt on input lin
-e 187.
+e 189.
  [4 <./Graphics/emp15_outliers.png (PNG copy)>] (baltab_fdi.tex) [5]
 <Graphics/graph.png, id=42, 883.3pt x 588.1975pt>
 File: Graphics/graph.png Graphic file (type png)
 <use Graphics/graph.png>
-Package pdftex.def Info: Graphics/graph.png  used on input line 236. on input l
-ine 236.
+Package pdftex.def Info: Graphics/graph.png  used on input line 240. on input l
+ine 240.
 Package pdftex.def Info: Requested size: 418.25555pt x 278.51715pt on input lin
-e 236.
+e 240.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1301,7 +1301,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--383
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
 
  []
 
@@ -1309,17 +1309,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 382--383
 <Graphics/overlap_type.png, id=63, 883.3pt x 588.1975pt>
 File: Graphics/overlap_type.png Graphic file (type png)
 <use Graphics/overlap_type.png>
-Package pdftex.def Info: Graphics/overlap_type.png  used on input line 404. on 
-input line 404.
+Package pdftex.def Info: Graphics/overlap_type.png  used on input line 415. on 
+input line 415.
 Package pdftex.def Info: Requested size: 512.73218pt x 341.43306pt on input lin
-e 404.
+e 415.
 
-Overfull \hbox (39.99274pt too wide) in paragraph at lines 403--406
+Overfull \hbox (39.99274pt too wide) in paragraph at lines 414--417
 []|  [] 
  []
 
 
-Overfull \hbox (8.48456pt too wide) in paragraph at lines 418--446
+Overfull \hbox (8.48456pt too wide) in paragraph at lines 429--457
  [] 
  []
 
@@ -1348,7 +1348,7 @@ s/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/miktex 2.9v2/fonts/type1
 er/sfsx1440.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfti
 0900.pfb><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfti1095.pf
 b><C:/Program Files/miktex 2.9v2/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on FDI_project.pdf (19 pages, 1321735 bytes).
+Output written on FDI_project.pdf (19 pages, 1321203 bytes).
 PDF statistics:
  129 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
