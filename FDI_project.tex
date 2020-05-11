@@ -150,6 +150,7 @@ We standardize TFP to a mean of zero and a standard deviation of one, making the
 A set of categorical and continuous control variables was measured in 2015, one year prior to the firms receiving FDI. Table \ref{tab:cat} provides an overview of the categorical variables and their frequencies in our sample. 
 The port variable indicates whether a firm has access to a port within 500km. The legal ownership of a firm is captured in the ownership variable. The technology intensity of the industry the respective firm is operating in, is measured in four categories from low- to high-tech. The R\&D dummy indicates whether a firm has invested in Research and Development in 2015. \\
 
+
 %-------------------------TABLE 2
 \begin{table}[h!]
 	\centering
@@ -157,9 +158,10 @@ The port variable indicates whether a firm has access to a port within 500km. Th
 	\input{cat_freq}
 	\label{tab:cat}	
 \end{table} 
-\FloatBarrier
 %--------------------------------
-\vspace{2em}
+
+\setlength{\floatsep}{40pt plus 2.0pt}
+
 %-----------------------TABLE 3
 \begin{table}[h!]
 	\centering
@@ -167,9 +169,11 @@ The port variable indicates whether a firm has access to a port within 500km. Th
 	\input{cont_summ}
 	\label{tab:cont}
 \end{table}
-\FloatBarrier
+
 %------------------------------
-\newpage
+
+
+\clearpage
 
 The summary statistics of the continuous variables, i.e. wages,  total-factor productivity (TFP), firm size\footnote{Since the original variable is only available in logarithmic form and lacks an indicator for the unit of measurement we assume it is measured in number of employees.}, debts and the firms' export intensity are displayed in Table \ref{tab:cont}. The variables wages and employment  and, to a lesser extent, debts show large differences between their mean and median values. To reduce the influence of extreme values potentially causing this divergence one can take the logarithm of these variables. However, including the log transformed employment variable yields worse covariate balance in all estimated models. We therefore include the untransformed employment variable in the subsequent analysis, despite noting at least one extreme value in this variable (see Figure \ref{fig:outliers}). We test the robustness of our models to the exclusion of observations with extreme values in the employment variable in section 4.
 
@@ -512,11 +516,11 @@ High-tech &1658&87.0&100.0&247&13.0&100.0 \\ \\[-0.8em]
 \subsection{Stata Output}
 \label{app:logfile}
 \begin{figure}[h!] \centering{
-\includegraphics[width=15cm]{log_fdi_matching.pdf}}
+\includegraphics[width=14.9cm]{stata_firstpage}}
 \end{figure}
 \newpage
 
-\includepdf[pages=2-32, scale=.9, pagecommand=\thispagestyle{plain}]{log_fdi_matching.pdf}
+\includepdf[pages=2-32, scale=.92, pagecommand=\thispagestyle{plain}]{log_fdi_matching.pdf}
 \end{changemargin}
 
 \end{document}
