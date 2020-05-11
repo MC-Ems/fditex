@@ -514,9 +514,8 @@ High-tech &1658&87.0&100.0&247&13.0&100.0 \\ \\[-0.8em]
 \begin{figure}[h!] \centering{
 \includegraphics[width=15cm]{log_fdi_matching.pdf}}
 \end{figure}
-\newpage
 
-\includepdf[pages=2-32, scale=.9, pagecommand=\thispagestyle{plain}]{log_fdi_matching.pdf}
+\includepdf[pages=2-32, scale=.8, pagecommand=\thispagestyle{plain}]{log_fdi_matching.pdf}
 \end{changemargin}
 
 \end{document}
